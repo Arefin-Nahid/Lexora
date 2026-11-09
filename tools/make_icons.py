@@ -10,25 +10,39 @@ WHITE = (250, 252, 250, 255)
 SS = 4  # supersampling
 
 
+def gradient(s):
+    top, bot = (34, 142, 112), (12, 84, 66)
+    g = Image.new("RGBA", (s, s))
+    px = g.load()
+    for y in range(s):
+        for x in range(s):
+            t = min(1.0, max(0.0, (x * 0.35 + y * 0.65) / s))
+            px[x, y] = tuple(int(top[i] + (bot[i] - top[i]) * t) for i in range(3)) + (255,)
+    return g
+
+
 def draw(size, rounded, content):
+    """Minimal monogram: a white L (the stem is the word, the foot is the path to it) and two short bars
+    beside the stem, one solid and one soft, standing for a synonym and an antonym."""
     s = size * SS
-    img = Image.new("RGBA", (s, s), (0, 0, 0, 0))
-    d = ImageDraw.Draw(img)
+    img = gradient(s)
     if rounded:
-        d.rounded_rectangle([0, 0, s - 1, s - 1], radius=int(s * 0.22), fill=MINT)
-    else:
-        d.rectangle([0, 0, s, s], fill=MINT)
-    # an "L" made of two rounded bars, with a small leaf-like dot as the spark
-    c = s * content                      # width of the safe content box
+        mask = Image.new("L", (s, s), 0)
+        ImageDraw.Draw(mask).rounded_rectangle([0, 0, s - 1, s - 1], radius=int(s * 0.225), fill=255)
+        img.putalpha(mask)
+    d = ImageDraw.Draw(img)
+    c = s * content
     x0 = (s - c) / 2
     y0 = (s - c) / 2
-    bar = c * 0.2
-    r = bar / 2
-    stem_x = x0 + c * 0.16
-    d.rounded_rectangle([stem_x, y0 + c * 0.04, stem_x + bar, y0 + c * 0.96], radius=r, fill=WHITE)
-    d.rounded_rectangle([stem_x, y0 + c * 0.96 - bar, x0 + c * 0.88, y0 + c * 0.96], radius=r, fill=WHITE)
-    cx, cy, cr = x0 + c * 0.76, y0 + c * 0.26, c * 0.13
-    d.ellipse([cx - cr, cy - cr, cx + cr, cy + cr], fill=LIGHT)
+    w = c * 0.15
+    r = w / 2
+    sx = x0 + c * 0.14
+    top, bot = y0 + c * 0.02, y0 + c * 0.98
+    d.rounded_rectangle([sx, top, sx + w, bot], radius=r, fill=WHITE)
+    d.rounded_rectangle([sx, bot - w, x0 + c * 0.9, bot], radius=r, fill=WHITE)
+    bx = sx + w + c * 0.14
+    d.rounded_rectangle([bx, y0 + c * 0.24, bx + c * 0.46, y0 + c * 0.24 + w * 0.8], radius=w * 0.4, fill=WHITE)
+    d.rounded_rectangle([bx, y0 + c * 0.47, bx + c * 0.3, y0 + c * 0.47 + w * 0.8], radius=w * 0.4, fill=(190, 226, 212, 255))
     return img.resize((size, size), Image.LANCZOS)
 
 

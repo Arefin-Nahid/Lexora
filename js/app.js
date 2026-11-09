@@ -27,7 +27,7 @@
     gear: '<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/>',
     back: '<path d="M15 5l-7 7 7 7"/>', close: '<path d="M6 6l12 12M18 6L6 18"/>',
     star: '<path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/>',
-    check: '<path d="M5 12.5l4.5 4.5L19 7.5"/>', chev: '<path d="M6 9l6 6 6-6"/>'
+    check: '<path d="M5 12.5l4.5 4.5L19 7.5"/>', redo: '<path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"/><path d="M21 3v5h-5"/>', minus: '<path d="M6 12h12"/>', list: '<path d="M9 6h11M9 12h11M9 18h11"/><path d="M4 6h.01M4 12h.01M4 18h.01"/>', chev: '<path d="M6 9l6 6 6-6"/>'
   };
   function ic(n) { return '<svg class="i" viewBox="0 0 24 24" aria-hidden="true">' + ICONS[n] + '</svg>'; }
   function fmtDate(s) { return srs.parseYmd(s).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' }); }
@@ -102,7 +102,7 @@
     $('#tabs').innerHTML = tabs.map(function (t) {
       var cur = ui.route === t[0] ? ' aria-current="page"' : '';
       var badge = t[0] === 'today' && sm.remaining > 0 ? '<span class="badge">' + (sm.remaining > 99 ? '99+' : sm.remaining) + '</span>' : '';
-      return '<button data-act="tab" data-r="' + t[0] + '"' + cur + '>' + ic(t[0]) + badge + '<span>' + t[1] + '</span></button>';
+      return '<button data-act="tab" data-r="' + t[0] + '"' + cur + '><span class="ico">' + ic(t[0]) + badge + '</span><span class="lbl">' + t[1] + '</span></button>';
     }).join('');
   }
   function render() {
@@ -181,14 +181,15 @@
   function vPractice() {
     var P = ui.prac, n = practicePool().length;
     var scopes = [['any', 'Any'], ['due', 'Due'], ['new', 'New'], ['seen', 'Seen']];
-    var modes = [['flash', 'Flashcards', 'Word to meaning'], ['rev', 'Reverse cards', 'Meaning to word'], ['mcq', 'Multiple choice', 'Pick from 4'],
-      ['type', 'Type the answer', 'Synonym or antonym'], ['weak', 'Weak words', weakIds().length + ' to work on'], ['list', 'Read as a list', 'In book order']];
+    var modes = [['flash', 'Flashcards', 'Word to meaning'], ['mcq', 'Multiple choice', 'Pick from 4'],
+      ['type', 'Type the answer', 'Synonym or antonym'], ['weak', 'Weak words', weakIds().length + ' to work on']];
     return '<section class="card stack"><div><div class="label">Letters</div>' + catPicker(P.cats, 'prac') + '</div>'
       + '<div><div class="label">Which words</div><div class="seg" role="group" aria-label="Scope">' + scopes.map(function (s) { return '<button data-act="scope" data-s="' + s[0] + '" aria-pressed="' + (P.scope === s[0]) + '">' + s[1] + '</button>'; }).join('') + '</div></div>'
       + '<div><div class="label">How many</div>' + countSeg(P.count, 'prac') + '</div>'
       + '<p class="sub"><b style="color:var(--ink)">' + n + '</b> words match these filters.</p></section>'
-      + '<section class="card"><div class="label">Choose a mode</div><div class="stack">' + modes.map(function (m) {
-        return '<button class="btn ghost block" style="justify-content:space-between" data-act="mode" data-m="' + m[0] + '"><span>' + m[1] + '</span><span class="sub">' + m[2] + '</span></button>';
+      + '<button class="listcard" data-act="mode" data-m="list"><span class="ico">' + ic('list') + '</span><span class="grow"><b>Read as a list</b><span class="sub">In book order, with a tick for each word</span></span>' + ic('chev') + '</button>'
+      + '<section class="card"><div class="label">Test yourself</div><div class="stack">' + modes.map(function (m) {
+        return '<button class="modebtn" data-act="mode" data-m="' + m[0] + '"><span class="grow"><b>' + m[1] + '</b><span class="sub">' + m[2] + '</span></span>' + ic('chev') + '</button>';
       }).join('') + '</div><p class="sub" style="margin-top:12px">Practice never changes your review dates. It only updates which words count as difficult.</p></section>';
   }
   function startPractice(mode) {
@@ -202,7 +203,7 @@
     ids = quiz.interleave(quiz.shuffle(ids).slice(0, P.count), byId);
     if (mode === 'mcq') startQuiz(ids, { kind: 'mcq', title: 'Multiple choice' });
     else if (mode === 'type') startQuiz(ids, { kind: 'type', title: 'Type the answer' });
-    else startFlash(ids, { kind: 'practice', reverse: mode === 'rev', title: mode === 'rev' ? 'Reverse cards' : mode === 'weak' ? 'Weak words' : 'Flashcards' });
+    else startFlash(ids, { kind: 'practice', title: mode === 'weak' ? 'Weak words' : 'Flashcards' });
   }
 
   /* ---------- Search ---------- */
@@ -343,8 +344,8 @@
   function startFlash(ids, o) { SES = { type: 'flash', o: o, ses: new Session(store, ids, { kind: o.kind }), shown: false }; drawFlash(); }
   function drawFlash() {
     var s = SES.ses; if (s.done()) return drawResult();
-    var id = s.current(), e = byId.get(id), rev = SES.o.reverse, today = store.today(), body, foot;
-    var front = rev ? '<div class="bigbn">' + esc(e.bn) + '</div><div class="hintline">Which word means this?</div>' : '<div class="big">' + esc(e.word) + '</div><div class="hintline">Say the meaning, a synonym and an antonym.</div>';
+    var id = s.current(), e = byId.get(id), today = store.today(), body, foot;
+    var front = '<div class="big">' + esc(e.word) + '</div><div class="hintline">Say the meaning, a synonym and an antonym.</div>';
     if (!SES.shown) {
       body = '<div class="flash">' + front + '</div>';
       foot = '<button class="btn block" data-act="flip">Show answer</button>';
@@ -353,9 +354,9 @@
         + '<div><div class="label">Synonyms</div>' + chipsHtml(e.syn) + '</div><div><div class="label">Antonyms</div>' + chipsHtml(e.ant, 'ant') + '</div>' + unclearHtml(e) + '</div></div>';
       var pv = SES.o.kind === 'srs' ? srs.preview(store.card(id), today) : null;
       foot = '<div class="grades">'
-        + '<button class="grade forgot" data-act="grade" data-g="forgot">Forgot<small>' + (pv ? pv.forgot : 'Again soon') + '</small></button>'
-        + '<button class="grade hard" data-act="grade" data-g="hard">Hard<small>' + (pv ? pv.hard : '&nbsp;') + '</small></button>'
-        + '<button class="grade got" data-act="grade" data-g="got">Got it<small>' + (pv ? pv.got : '&nbsp;') + '</small></button></div>';
+        + '<button class="grade forgot" data-act="grade" data-g="forgot">' + ic('redo') + '<b>Forgot</b><small>' + (pv ? pv.forgot : 'Again soon') + '</small></button>'
+        + '<button class="grade hard" data-act="grade" data-g="hard">' + ic('minus') + '<b>Hard</b><small>' + (pv ? pv.hard : 'Soon') + '</small></button>'
+        + '<button class="grade got" data-act="grade" data-g="got">' + ic('check') + '<b>Got it</b><small>' + (pv ? pv.got : 'Later') + '</small></button></div>';
     }
     sheet(frame(SES.o.title, (s.pos + 1) + '/' + s.queue.length, s.progress() * 100, body, foot));
   }

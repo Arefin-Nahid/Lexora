@@ -8,7 +8,7 @@ It holds the 571 entries from the BCS preparation book (pages 231 to 248, A to Z
 - **Spaced repetition.** Flashcards with three buttons. Forgot shows the word again in the same session. Hard returns in 3 days. Got it returns in 7 days, then 14, then 30, then longer. The next interval is shown under each button. An SM-2 ease factor and a Leitner box are kept inside each card.
 - **Daily plan.** A quota of new words plus the due reviews. The quota is decided on the first visit each day and then frozen. It is paused when 60 or more reviews are waiting.
 - **Study flow.** A numbered list of new words (cover answers, a tick per word, a star), then a test.
-- **Modes.** Flashcards, reverse flashcards, multiple choice (distractors are never a valid synonym or antonym of the word), type the answer (any valid answer, small spelling slips tolerated), weak words, and read as a list.
+- **Modes.** Flashcards, multiple choice (distractors are never a valid synonym or antonym of the word), type the answer (any valid answer, small spelling slips tolerated), weak words, and read as a list.
 - **Pick more words.** Read extra words from any letters without using up the daily plan.
 - **Search.** Live search with letter index and filters. A word that appears as a synonym or antonym of other entries is shown under its own headword with those entries.
 - **Sync.** Optional Google sign-in and Firestore sync (see `FIREBASE_SETUP.md`). Everything works offline and without signing in.
