@@ -62,8 +62,7 @@
   }
   function entryCard(e) {
     var c = store.card(e.id) || {};
-    return '<div class="entry"><div class="row between"><div class="meta"><span class="status ' + statusOf(e.id) + '">' + statusOf(e.id) + '</span></div>'
-      + '<button class="iconbtn star" data-act="star" data-id="' + e.id + '" aria-pressed="' + !!c.star + '" aria-label="Star ' + esc(e.word) + '">' + ic('star') + '</button></div>'
+    return '<div class="entry">'
       + entryBody(e) + '</div>';
   }
 
@@ -75,7 +74,8 @@
     Q: { q: '', cat: '', pos: '', status: '', letter: '', limit: 40 },
     planAll: false, resetArmed: false, installEvt: null, busy: false
   };
-  var TITLES = { home: 'Lexora', today: 'Today', practice: 'Practice', search: 'Search', plan: 'Plan', settings: 'Settings' };
+  var PACES = [5, 10, 15, 20, 30, 40];
+  var TITLES = { home: 'Lexora', today: 'Today', practice: 'Practice', search: 'Search', settings: 'Settings' };
 
   function go(r) {
     if (r === 'settings') { if (ui.route === 'settings') r = ui.prev; else ui.prev = ui.route; }
@@ -98,7 +98,7 @@
       + '<button class="iconbtn" data-act="settings" aria-label="Settings" aria-pressed="' + inSettings + '">' + ic('gear') + '</button>';
   }
   function renderTabs() {
-    var sm = summary(), tabs = [['home', 'Home'], ['today', 'Today'], ['practice', 'Practice'], ['search', 'Search'], ['plan', 'Plan']];
+    var sm = summary(), tabs = [['home', 'Home'], ['today', 'Today'], ['practice', 'Practice'], ['search', 'Search']];
     $('#tabs').innerHTML = tabs.map(function (t) {
       var cur = ui.route === t[0] ? ' aria-current="page"' : '';
       var badge = t[0] === 'today' && sm.remaining > 0 ? '<span class="badge">' + (sm.remaining > 99 ? '99+' : sm.remaining) + '</span>' : '';
@@ -107,7 +107,7 @@
   }
   function render() {
     renderBar();
-    var v = { home: vHome, today: vToday, practice: vPractice, search: vSearch, plan: vPlan, settings: vSettings }[ui.route];
+    var v = { home: vHome, today: vToday, practice: vPractice, search: vSearch, settings: vSettings }[ui.route];
     $('#view').innerHTML = v();
     renderTabs();
     if (ui.route === 'search') drawResults();
@@ -272,27 +272,6 @@
       + (total > shown.length ? '<div class="more"><button class="btn ghost" data-act="moreResults">Show ' + Math.min(40, total - shown.length) + ' more</button></div>' : '');
   }
 
-  /* ---------- Plan ---------- */
-  var PACES = [5, 10, 15, 20, 25, 30, 40];
-  function vPlan() {
-    var st = store.s.settings, today = store.today(), sm = summary(), unseen = unseenIds().length;
-    var proj = srs.project({ today: today, cards: store.s.cards, unseen: unseen, examDate: st.examDate || null, dailyNew: st.dailyNew, todayQuota: sm.remainingNew });
-    var need = srs.neededPerDay(unseen, today, st.examDate), msg = '';
-    if (!st.examDate) msg = '<div class="notice">Set an exam date to see whether you will reach every word in time.</div>';
-    else if (st.examDate < today) msg = '<div class="notice">The exam date has passed. Pick a new date.</div>';
-    else if (unseen === 0) msg = '<div class="notice good">Every word has been started. From here the plan is reviews only.</div>';
-    else if (proj.finish && proj.finish <= st.examDate) msg = '<div class="notice good">At ' + st.dailyNew + ' a day you will have started every word by ' + fmtDateLong(proj.finish) + ', ' + plural(srs.diffDays(st.examDate, proj.finish), 'day') + ' before your exam.</div>';
-    else msg = '<div class="notice">At ' + st.dailyNew + ' a day, ' + proj.unseenAfter + ' words are still not started by your exam. You would need about ' + need + ' a day.' + (need <= 60 ? ' <button class="btn small soft" style="margin-top:8px" data-act="usePace" data-n="' + need + '">Use ' + need + ' a day</button>' : '') + '</div>';
-    var rows = (ui.planAll ? proj.days : proj.days.slice(0, 14));
-    var table = '<div class="tablewrap"><table><thead><tr><th>Day</th><th>New</th><th>Reviews</th></tr></thead><tbody>' + rows.map(function (d, i) {
-      return '<tr' + (d.date === today ? ' class="today"' : '') + '><td>' + (d.date === today ? 'Today' : fmtDate(d.date)) + '</td><td>' + d.intro + '</td><td>' + d.reviews + '</td></tr>';
-    }).join('') + '</tbody></table></div>' + (proj.days.length > 14 ? '<div class="more"><button class="btn ghost" data-act="planAll">' + (ui.planAll ? 'Show fewer days' : 'Show all ' + proj.days.length + ' days') + '</button></div>' : '');
-    return '<section class="card stack"><div><h2>Your pace</h2><p class="sub">New words per day. A change starts tomorrow; today\'s plan stays at ' + sm.quota + '.</p></div>'
-      + '<div class="seg" role="group" aria-label="New words per day">' + PACES.map(function (n) { return '<button data-act="pace" data-n="' + n + '" aria-pressed="' + (st.dailyNew === n) + '">' + n + '</button>'; }).join('') + '</div>'
-      + '<div class="field"><label for="exam">Exam or target date</label><input type="date" id="exam" value="' + esc(st.examDate) + '" min="' + today + '"></div>' + msg + '</section>'
-      + '<section class="card stack"><div><h2>' + (st.examDate && st.examDate >= today ? 'Schedule until your exam' : 'Next 14 days') + '</h2><p class="sub">Assumes you answer Got it every time. Real reviews will be a little higher.</p></div>' + table + '</section>';
-  }
-
   /* ---------- Settings ---------- */
   function isStandalone() { return (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) || window.navigator.standalone === true; }
   function vSettings() {
@@ -311,6 +290,7 @@
       + '<section class="card stack"><h2>Install</h2>' + install + '</section>'
       + '<section class="card stack"><h2>Appearance and study</h2>'
       + '<div class="field"><label>Theme</label><div class="seg" role="group" aria-label="Theme">' + [['system', 'System'], ['light', 'Light'], ['dark', 'Dark']].map(function (t) { return '<button data-act="theme" data-t="' + t[0] + '" aria-pressed="' + (dev.theme === t[0]) + '">' + t[1] + '</button>'; }).join('') + '</div></div>'
+      + '<div class="field"><label>New words per day</label><div class="seg" role="group" aria-label="New words per day">' + PACES.map(function (n) { return '<button data-act="pace" data-n="' + n + '" aria-pressed="' + (st.dailyNew === n) + '">' + n + '</button>'; }).join('') + '</div><span class="sub">Applies from tomorrow.</span></div>'
       + '<div class="field"><label for="lang">Language</label><select id="lang"><option value="en" selected>English</option></select></div>'
       + '</section>'
       + '<section class="card stack"><h2>Your data</h2><p class="sub">' + store.seenCount() + ' of ' + entries.length + ' words started. ' + unclear + ' entries are marked "Unclear in source" because the book print was hard to read or looked like a misprint.</p>'
@@ -528,8 +508,6 @@
       }
       case 'close': closeSheet(); break;
       case 'pace': store.setSetting('dailyNew', +d.n); render(); break;
-      case 'usePace': store.setSetting('dailyNew', Math.max(5, Math.min(60, +d.n))); render(); toast('New words per day set to ' + d.n + ', from tomorrow.'); break;
-      case 'planAll': ui.planAll = !ui.planAll; render(); break;
       case 'theme': store.setDevice('theme', d.t); applyTheme(); render(); break;
       case 'install': if (ui.installEvt) { ui.installEvt.prompt(); ui.installEvt.userChoice.then(function () { ui.installEvt = null; render(); }); } break;
       case 'signin': {
@@ -557,7 +535,6 @@
     if (id === 'fcat') { ui.Q.cat = ev.target.value; drawResults(); }
     else if (id === 'fpos') { ui.Q.pos = ev.target.value; drawResults(); }
     else if (id === 'fstatus') { ui.Q.status = ev.target.value; drawResults(); }
-    else if (id === 'exam') { store.setSetting('examDate', ev.target.value); render(); }
   });
   document.addEventListener('keydown', function (ev) {
     if (ev.key === 'Escape' && !$('#sheet').hidden) { closeSheet(); return; }
