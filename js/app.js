@@ -62,8 +62,7 @@
   }
   function entryCard(e) {
     var c = store.card(e.id) || {};
-    return '<div class="entry"><div class="row between"><div class="meta"><b style="font-size:18px;color:var(--ink)">' + esc(e.word) + '</b>'
-      + '<span class="status ' + statusOf(e.id) + '">' + statusOf(e.id) + '</span><span>Book p.' + e.page + '</span></div>'
+    return '<div class="entry"><div class="row between"><div class="meta"><span class="status ' + statusOf(e.id) + '">' + statusOf(e.id) + '</span></div>'
       + '<button class="iconbtn star" data-act="star" data-id="' + e.id + '" aria-pressed="' + !!c.star + '" aria-label="Star ' + esc(e.word) + '">' + ic('star') + '</button></div>'
       + entryBody(e) + '</div>';
   }
@@ -120,7 +119,7 @@
     var hero;
     if (sm.remaining > 0) {
       hero = '<section class="card hero"><div class="label">Today\'s study</div><div class="big">' + sm.remaining + '<small>' + (sm.remaining === 1 ? 'word left' : 'words left') + '</small></div>'
-        + '<div class="meta">' + sm.remainingNew + ' new · ' + plural(sm.due, 'review') + ' · about ' + sm.minutes + ' min</div>'
+        + '<div class="meta">' + sm.remainingNew + ' new · ' + plural(sm.due, 'review') + '</div>'
         + '<div class="track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + Math.round(sm.progress * 100) + '"><i style="width:' + Math.round(sm.progress * 100) + '%"></i></div>'
         + '<button class="btn block" data-act="start">Start</button>'
         + (sm.reduced ? '<div class="note">' + esc(sm.reason) + '</div>' : '') + '</section>';
@@ -154,8 +153,7 @@
     var sm = summary();
     var plan = '<section class="card stack"><div><div class="label">Daily plan</div>'
       + '<div class="row between"><span>New words</span><b>' + sm.newDone + ' of ' + sm.quota + ' done</b></div>'
-      + '<div class="row between"><span>Reviews waiting</span><b>' + sm.due + '</b></div>'
-      + '<div class="row between"><span>Time left</span><b>about ' + sm.minutes + ' min</b></div></div>'
+      + '<div class="row between"><span>Reviews waiting</span><b>' + sm.due + '</b></div></div>'
       + (sm.reduced ? '<div class="notice">' + esc(sm.reason) + '</div>' : '')
       + '<div class="stack">'
       + '<button class="btn block" data-act="start"' + (sm.remaining ? '' : ' disabled') + '>' + (sm.remaining ? 'Start today\'s study' : 'Nothing left for today') + '</button>'
@@ -266,10 +264,10 @@
         var body = g.entries.map(entryCard).join('');
         if (g.reverse.length) {
           body += '<div class="entry"><div class="revhead">Also listed under ' + esc(g.title) + '</div>' + g.reverse.map(function (r) {
-            return '<details class="res"><summary><span class="sub" style="font-size:13px">' + (r.kind === 'syn' ? 'Synonym of' : 'Antonym of') + '</span><b>' + esc(r.entry.word) + '</b><span class="bn">' + esc(r.entry.bn) + '</span>' + ic('chev') + '</summary><div class="res-body">' + entryCard(r.entry) + '</div></details>';
+            return '<details class="res"><summary><span class="sub" style="font-size:13px">' + (r.kind === 'syn' ? 'Synonym of' : 'Antonym of') + '</span><b>' + esc(r.entry.word) + '</b>' + ic('chev') + '</summary><div class="res-body">' + entryCard(r.entry) + '</div></details>';
           }).join('') + '</div>';
         }
-        return '<details class="res"' + open + '><summary><b>' + esc(g.title) + '</b><span class="bn">' + esc(first ? first.bn : (g.reverse.length ? 'Listed in ' + g.reverse.length + ' entr' + (g.reverse.length === 1 ? 'y' : 'ies') : '')) + '</span>' + ic('chev') + '</summary><div class="res-body">' + body + '</div></details>';
+        return '<details class="res"' + open + '><summary><b>' + esc(g.title) + '</b>' + ic('chev') + '</summary><div class="res-body">' + body + '</div></details>';
       }).join('')
       + (total > shown.length ? '<div class="more"><button class="btn ghost" data-act="moreResults">Show ' + Math.min(40, total - shown.length) + ' more</button></div>' : '');
   }
@@ -278,7 +276,7 @@
   var PACES = [5, 10, 15, 20, 25, 30, 40];
   function vPlan() {
     var st = store.s.settings, today = store.today(), sm = summary(), unseen = unseenIds().length;
-    var proj = srs.project({ today: today, cards: store.s.cards, unseen: unseen, examDate: st.examDate || null, dailyNew: st.dailyNew, budget: st.budget, todayQuota: sm.remainingNew });
+    var proj = srs.project({ today: today, cards: store.s.cards, unseen: unseen, examDate: st.examDate || null, dailyNew: st.dailyNew, todayQuota: sm.remainingNew });
     var need = srs.neededPerDay(unseen, today, st.examDate), msg = '';
     if (!st.examDate) msg = '<div class="notice">Set an exam date to see whether you will reach every word in time.</div>';
     else if (st.examDate < today) msg = '<div class="notice">The exam date has passed. Pick a new date.</div>';
@@ -286,8 +284,8 @@
     else if (proj.finish && proj.finish <= st.examDate) msg = '<div class="notice good">At ' + st.dailyNew + ' a day you will have started every word by ' + fmtDateLong(proj.finish) + ', ' + plural(srs.diffDays(st.examDate, proj.finish), 'day') + ' before your exam.</div>';
     else msg = '<div class="notice">At ' + st.dailyNew + ' a day, ' + proj.unseenAfter + ' words are still not started by your exam. You would need about ' + need + ' a day.' + (need <= 60 ? ' <button class="btn small soft" style="margin-top:8px" data-act="usePace" data-n="' + need + '">Use ' + need + ' a day</button>' : '') + '</div>';
     var rows = (ui.planAll ? proj.days : proj.days.slice(0, 14));
-    var table = '<div class="tablewrap"><table><thead><tr><th>Day</th><th>New</th><th>Reviews</th><th>Minutes</th></tr></thead><tbody>' + rows.map(function (d, i) {
-      return '<tr' + (d.date === today ? ' class="today"' : '') + '><td>' + (d.date === today ? 'Today' : fmtDate(d.date)) + '</td><td>' + d.intro + '</td><td>' + d.reviews + '</td><td>' + d.minutes + '</td></tr>';
+    var table = '<div class="tablewrap"><table><thead><tr><th>Day</th><th>New</th><th>Reviews</th></tr></thead><tbody>' + rows.map(function (d, i) {
+      return '<tr' + (d.date === today ? ' class="today"' : '') + '><td>' + (d.date === today ? 'Today' : fmtDate(d.date)) + '</td><td>' + d.intro + '</td><td>' + d.reviews + '</td></tr>';
     }).join('') + '</tbody></table></div>' + (proj.days.length > 14 ? '<div class="more"><button class="btn ghost" data-act="planAll">' + (ui.planAll ? 'Show fewer days' : 'Show all ' + proj.days.length + ' days') + '</button></div>' : '');
     return '<section class="card stack"><div><h2>Your pace</h2><p class="sub">New words per day. A change starts tomorrow; today\'s plan stays at ' + sm.quota + '.</p></div>'
       + '<div class="seg" role="group" aria-label="New words per day">' + PACES.map(function (n) { return '<button data-act="pace" data-n="' + n + '" aria-pressed="' + (st.dailyNew === n) + '">' + n + '</button>'; }).join('') + '</div>'
@@ -314,7 +312,7 @@
       + '<section class="card stack"><h2>Appearance and study</h2>'
       + '<div class="field"><label>Theme</label><div class="seg" role="group" aria-label="Theme">' + [['system', 'System'], ['light', 'Light'], ['dark', 'Dark']].map(function (t) { return '<button data-act="theme" data-t="' + t[0] + '" aria-pressed="' + (dev.theme === t[0]) + '">' + t[1] + '</button>'; }).join('') + '</div></div>'
       + '<div class="field"><label for="lang">Language</label><select id="lang"><option value="en" selected>English</option></select></div>'
-      + '<div class="field"><label for="budget">Daily time budget</label><select id="budget">' + [15, 20, 30, 45, 60, 90].map(function (m) { return '<option value="' + m + '"' + (st.budget === m ? ' selected' : '') + '>' + m + ' minutes</option>'; }).join('') + '</select><span class="sub">New words are reduced when reviews would take most of this time. Applies from tomorrow.</span></div></section>'
+      + '</section>'
       + '<section class="card stack"><h2>Your data</h2><p class="sub">' + store.seenCount() + ' of ' + entries.length + ' words started. ' + unclear + ' entries are marked "Unclear in source" because the book print was hard to read or looked like a misprint.</p>'
       + '<button class="btn ' + (ui.resetArmed ? 'danger' : 'ghost') + ' block" data-act="reset">' + (ui.resetArmed ? 'Tap again to erase all progress' : 'Reset progress') + '</button>'
       + (ui.resetArmed ? '<p class="sub">This clears your schedule, counters and stars' + (u ? ' on this device and in your account' : ' on this device') + '. It cannot be undone.</p>' : '') + '</section>'
@@ -560,7 +558,6 @@
     else if (id === 'fpos') { ui.Q.pos = ev.target.value; drawResults(); }
     else if (id === 'fstatus') { ui.Q.status = ev.target.value; drawResults(); }
     else if (id === 'exam') { store.setSetting('examDate', ev.target.value); render(); }
-    else if (id === 'budget') { store.setSetting('budget', +ev.target.value); toast('Daily time budget saved. It applies from tomorrow.'); }
   });
   document.addEventListener('keydown', function (ev) {
     if (ev.key === 'Escape' && !$('#sheet').hidden) { closeSheet(); return; }

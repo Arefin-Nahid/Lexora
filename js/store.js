@@ -19,7 +19,7 @@
       pending: {},                 // date -> {field: n} counter increments not yet sent
       dirtyCards: {},              // id -> 1 for cards changed since the last push
       dirtyState: false,
-      settings: { dailyNew: 20, budget: 30, examDate: '' },
+      settings: { dailyNew: 20, examDate: '' },
       plan: {},                    // date -> frozen plan for that day
       stateT: 0,
       device: { theme: 'system', lang: 'en', lastRoute: 'home' }
@@ -132,8 +132,8 @@
     var p = this.s.plan[today];
     if (p) return p;
     var due = this.dueIds(today).length, st = this.s.settings;
-    var q = srs.planQuota({ dailyNew: st.dailyNew, budget: st.budget, dueCount: due });
-    p = { quota: q.quota, reduced: q.reduced, reason: q.reason, due0: due, dailyNew: st.dailyNew, budget: st.budget };
+    var q = srs.planQuota({ dailyNew: st.dailyNew, dueCount: due });
+    p = { quota: q.quota, reduced: q.reduced, reason: q.reason, due0: due, dailyNew: st.dailyNew };
     this.s.plan[today] = p;
     var keys = Object.keys(this.s.plan).sort();
     while (keys.length > 45) delete this.s.plan[keys.shift()];
@@ -151,7 +151,7 @@
     return {
       date: today, quota: p.quota, reduced: p.reduced, reason: p.reason, newDone: d.newDone, reviewedToday: d.reviewed,
       remainingNew: remainingNew, due: due, remaining: remainingNew + due,
-      minutes: srs.estMinutes(remainingNew, due), progress: total > 0 ? done / total : 1
+      progress: total > 0 ? done / total : 1
     };
   };
 

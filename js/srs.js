@@ -82,7 +82,7 @@
   function planQuota(o) {
     var dailyNew = o.dailyNew, budget = o.budget, due = o.dueCount;
     if (due >= PILE_LIMIT) return { quota: 0, reduced: true, reason: 'Many reviews are waiting, so new words are paused today.' };
-    var room = Math.floor((budget - due * MIN_REVIEW) / MIN_NEW);
+    var room = budget == null ? dailyNew : Math.floor((budget - due * MIN_REVIEW) / MIN_NEW);
     var quota = Math.max(0, Math.min(dailyNew, room));
     if (quota < dailyNew) return { quota: quota, reduced: true, reason: 'Reduced from ' + dailyNew + ' because reviews take part of your time.' };
     return { quota: quota, reduced: false, reason: '' };
