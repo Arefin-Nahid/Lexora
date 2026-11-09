@@ -1,0 +1,13 @@
+{
+  "name": "lexora",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Lexora: offline-first vocabulary PWA",
+  "scripts": {
+    "build": "python3 tools/build.py",
+    "parse": "python3 tools/parse_vocab.py",
+    "serve": "python3 -m http.server 8080",
+    "test": "python3 -m unittest discover -s tests -p 'test_*.py' && node --test tests/*.test.js"
+  },
+  "devDependencies": { "jsdom": "^24.1.0" }
+}

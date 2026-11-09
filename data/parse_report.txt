@@ -1,0 +1,55 @@
+LEXORA VOCABULARY PARSE REPORT
+========================================
+Source file            : /home/claude/lexora/data/source/vocab_source.txt
+Source rows (lines)    : 571
+Source rows (regex)    : 571   (independent second count)
+Extracted entries      : 571
+Verified by round trip : 571   (entry -> source line, verbatim)
+Re-read from data.json : 571 entries, 571 verified
+Result                 : PASS, all counts match
+
+Rows per book page:
+  p.231: 32, p.232: 32, p.233: 31, p.234: 38, p.235: 35, p.236: 27, p.237: 33, p.238: 33, p.239: 34, p.240: 33, p.241: 30, p.242: 31, p.243: 29, p.244: 31, p.245: 31, p.246: 34, p.247: 29, p.248: 28
+
+Duplicate headwords (kept as they are): 3
+  imprudent: ids 280 (p.239), 281 (p.239)
+  ingenious: ids 300 (p.240), 301 (p.240)
+  proficient: ids 439 (p.244), 440 (p.244)
+
+Unclear in source (kept as printed, tagged in the app): 36
+  #14 p.231 Ambiguous: Bengali read by eye from a small scan; check the spelling.
+  #24 p.231 Autonomous: Synonym "Self-explanatory" may be "Self-governing" in the book.
+  #31 p.231 Advocate: Bengali shows verb and noun senses; numbered senses were flattened.
+  #42 p.232 Abolish: Bengali read by eye from a small scan; check the spelling.
+  #53 p.232 Anemic: Synonym "Hemoglobin deficiency" is as printed; "Florid" is the antonym for both senses.
+  #57 p.232 Apprehend: Bengali read by eye from a small scan; check the spelling.
+  #66 p.233 Belittle: Antonym printed as "Parise".
+  #72 p.233 Ban: Antonym "Induct" may be a misprint (maybe "Indulge").
+  #81 p.233 Beneficial: Synonym cell ends with a comma in the scan and may be cut off.
+  #82 p.233 Blameworthy: Synonym cell ends with a comma in the scan and may be cut off.
+  #109 p.234 Compel: Antonym printed as "Perimt".
+  #110 p.234 Comprehend: Synonym "Surrender" looks odd for this meaning.
+  #113 p.234 Copious: Antonym printed as "Rate"; probably "Rare".
+  #141 p.235 Desperate: Antonym printed as "Clam".
+  #149 p.235 Deformation: Synonym "Apoplexy" looks odd for this meaning.
+  #180 p.236 Endure: Antonyms "Succinct" and "Disperse" look odd for this meaning.
+  #183 p.236 Erratic: Bengali read by eye from a small scan; check the spelling.
+  #186 p.236 Eternal: "Perpetual" is listed twice in the synonyms.
+  #207 p.237 Fanciful: The last synonym reads "Imaginary" and the scan shows it twice.
+  #224 p.237 Fluctuate: Bengali "উঠামানা" may be a misprint of "ওঠানামা".
+  #226 p.237 Formidable: Columns were skewed in the scan; synonym and antonym pairing is medium confidence.
+  #227 p.237 Fright: Columns were skewed in the scan; synonym and antonym pairing is medium confidence.
+  #301 p.240 Ingenious: Headword printed as "Ingenious" for this sense (সরল/নির্দোষ); probably "Ingenuous".
+  #321 p.240 Jargon: Antonym is cut off at the page edge ("Understandabl").
+  #322 p.240 Jeer: Antonym is cut off at the page edge ("Consol").
+  #378 p.242 Motley: Antonym spelled "Homogenous" as printed.
+  #442 p.244 Profuse: Antonym "Miserly" was hard to read in the scan; check it.
+  #448 p.244 Prowess: Bengali read with low confidence.
+  #486 p.246 Scold: Antonym printed as "Complement".
+  #488 p.246 Sedate: Synonym printed as "Clam".
+  #511 p.246 Surmise: Antonym "Certainly" is as printed and looks odd.
+  #546 p.248 Valiant: Antonym printed as "Crave".
+  #558 p.248 Volatile: Synonym printed as "Tickle".
+  #562 p.248 Wilt: The book gives the same Bengali for Wilt and Wither.
+  #566 p.248 Wreck: Bengali read with low confidence.
+  #567 p.248 Wrinkle: Bengali read with low confidence.

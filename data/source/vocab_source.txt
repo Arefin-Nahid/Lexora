@@ -1,0 +1,576 @@
+# Lexora vocabulary source: transcription of 'synonym antonym.pdf' (book pages 231-248)
+# Format: page | word | pos | bengali | synonyms | antonyms | example | note | suggest
+# One entry per line, in book order. Lists use ', '. Lines starting with # are comments.
+# pos is filled only where the Bengali cell marks it. 'suggest' lists probable misprints as printed=probable.
+# Page 236's number is cut off in the scan; it is taken from the page sequence.
+231 | Absurd |  | অযৌক্তিক/ হাস্যকর | Unreasonable, Illogical | Reasonable, Sensible |  |  | 
+231 | Abandon |  | ত্যাগ করা | Discard, Drop, Forsake, Quit, Leave | Support, Retain, Keep |  |  | 
+231 | Abate |  | হ্রাস করা/ ছোট করা | Subside, Decrease, Lessen, Diminish | Magnify, Increase, Enlarge, Ameliorate |  |  | 
+231 | Abbreviate |  | সংক্ষিপ্ত করা | Shorten, Abridge, Trim, Condense | Enlarge, Expand, Amplify |  |  | 
+231 | Adulterate |  | ভেজাল মিশানো | Contaminate, Pollute, Amalgamate | Purify, Clean, Smoothen |  |  | 
+231 | Accord |  | মিল হওয়া | Admit, Allow, Grant, Agree | Oppose, Challenge, Disallow |  |  | 
+231 | Accumulate |  | জড়ো হওয়া/ একত্র করা | Gather, Amass, Assemble | Scatter, Disperse, Disseminate |  |  | 
+231 | Acknowledge |  | স্বীকার করা | Admit, Certify, Accept, Endorse | Deny, Refuse |  |  | 
+231 | Assist |  | সহযোগিতা করা | Help, Aid, Support | Oppose, Obstruct |  |  | 
+231 | Acme |  | সর্বোচ্চ সীমা | Summit, Pinnacle, Zenith | Lower Point, Base, Nadir |  |  | 
+231 | Admiration |  | শ্রদ্ধা/ ভালোবাসা | Appreciation, Praise, Glorification | Hate, Contempt, Disgust |  |  | 
+231 | Anxious |  | উদ্বিগ্ন | Worried, Alarmed, Scared | Assured, Content, Unworried |  |  | 
+231 | Adopt |  | নিজের বলে গ্রহণ করা | Assume, Accept, Approve | Reject, Disapprove |  |  | 
+231 | Ambiguous |  | সন্দেহজনক, দ্ব্যর্থবোধক, অস্পষ্ট | Doubtful, Dubious, Enigmatic, Puzzling | Clear, Understandable, Lucid |  | Bengali read by eye from a small scan; check the spelling. | 
+231 | Anonymous |  | রচয়িতার নামহীন | Nameless, Unnamed | Named, Signed |  |  | 
+231 | Antipathy |  | বিতৃষ্ণা/ ঘৃণা | Hatred, Hostility, Revulsion | Admiration, Respect, Love |  |  | 
+231 | Authentic |  | প্রকৃত, খাঁটি | Real, Genuine, Accredited | Spurious, False, Unauthorized |  |  | 
+231 | Awkward |  | আনাড়ি/ অপ্রস্তুত | Ungainly, Slovenly, Not Skillful | Artful, Adroit, Skillful |  |  | 
+231 | Amorphous |  | নিরাকার/ অনিয়তাকার | Formless, Unembodied, Incorporeal, Unformed | Definite, Distinctive, Shaped |  |  | 
+231 | Antecedent |  | পূর্বগামী | Anterior, Precedent, Precursory, Foregoing | Current, Following, Subsequent |  |  | 
+231 | Annuity |  | বার্ষিক | Annual, Anniversary | Monthly, Daily |  |  | 
+231 | Anarchy |  | অরাজকতা | Chaos, Disorder, Mess | Harmony, Lawfulness |  |  | 
+231 | Atheist |  | নাস্তিক | Skeptic, Infidel, Misbeliever | Credent, Believer |  |  | 
+231 | Autonomous |  | স্বশাসিত | Independent, Self-explanatory | Subservient, Dependent |  | Synonym "Self-explanatory" may be "Self-governing" in the book. | Self-explanatory=Self-governing
+231 | Adept |  | অত্যন্ত দক্ষ/ সুদক্ষ | Adroit, Dexterous, Proficient, Skilled, Skillful, Expert, Deft | Awkward, Unskilled, Clumsy, Inept, Inexpert |  |  | 
+231 | Admire |  | প্রশংসা করা, উঁচু ধারণা রাখা | Esteem, Respect, Praise, Extol, Eulogize, Commend | Blame, Censure, Condemn |  |  | 
+231 | Annoy |  | জ্বালাতন/বিরক্ত করা | Bother, Disturb, Irritate, Perturb | Calm, Pacify, Soothe |  |  | 
+231 | Abridge |  | সংক্ষেপ করা | Shorten, Condense | Expand, Enlarge |  |  | 
+231 | Adamant |  | অনমনীয়, গোঁয়ার | Insistent, Obstinate, Obdurate | Flexible, Compliant |  |  | 
+231 | Adverse |  | প্রতিকূল, বিরোধী | Unfavorable, Antagonistic | Beneficial, Auspicious |  |  | 
+231 | Advocate | v, n | (v) সমর্থন করা (n) সমর্থক | Support, Supporter, Proponent | Oppose, Attack, Opponent, Enemy |  | Bengali shows verb and noun senses; numbered senses were flattened. | 
+231 | Alienate |  | বিরোধ সৃষ্টি করা | Estrange, Isolate | Reconcile, Settle, Reunite |  |  | 
+232 | Altruism |  | পরোপকারিতা, পরার্থবাদ | Benevolence, Generosity, Bounty, Charity, Munificence | Selfishness |  |  | 
+232 | Animosity |  | শত্রুতা | Antagonism, Hostility, Rivalry | Amity, Harmony |  |  | 
+232 | Apathy |  | উদাসীনতা | Indifference, Callousness | Attention, Concern, Care |  |  | 
+232 | Appease |  | শান্ত করা, প্রশমিত করা | Pacify, Placate, Soothe, Allay, Alleviate, Mitigate | Annoy, Irritate, Enrage, Aggravate, Worsen |  |  | 
+232 | Astute |  | চতুর, কৌশলী | Shrewd, Keen, Sly | Unintelligent, Dull |  |  | 
+232 | Audacious |  | ১. দুঃসাহসী ২. ধৃষ্ট | Bold, Daring, Intrepid, Insolent, Haughty | Timid, Cowardly, Polite, Courteous |  |  | 
+232 | Avarice |  | অর্থলিপ্সা, লোভ | Lust For Money | Bounty, Generosity |  |  | 
+232 | Aver |  | নিশ্চয়তা সহকারে বলা | Affirm, Assert, Avow | Repudiate, Disavow |  |  | 
+232 | Abdicate |  | পদত্যাগ করা | Renounce, Relinquish | Claim |  |  | 
+232 | Abolish |  | ১. নিশ্চিহ্ন করা, ২. বাতিল করা | Eradicate, Obliterate, Exterminate, Annihilate, Repeal, Revoke, Annul | Establish, Set Up, Found, Institute, Validate, Legalize |  | Bengali read by eye from a small scan; check the spelling. | 
+232 | Abortive |  | নিষ্ফল, ব্যর্থ | Futile, Vain, Useless, Fruitless | Fruitful, Productive |  |  | 
+232 | Abrogate |  | বাতিল করা | Annul, Abolish, Eliminate, Rescind, Repeal, Quash | Enact, Pass, Ratify |  |  | 
+232 | Acumen |  | তীক্ষ্ম বুদ্ধি/কুশলতা | Sagacity, Judiciousness | Ignorance, Stupidity |  |  | 
+232 | Adversary |  | বিপক্ষ, শত্রু | Foe, Antagonist, Enemy | Support, Advocate |  |  | 
+232 | Affluent |  | ধনবান | Rich, Wealthy, Well-to-do | Impoverished, Destitute |  |  | 
+232 | Aggravate |  | অবনতি হওয়া | Deteriorate, Intensify, Worsen | Improve, Mitigate |  |  | 
+232 | Agitate |  | বিক্ষুব্ধ করা | Excite, Incite, Stimulate | Pacify, Appease, Soothe |  |  | 
+232 | Alleviate |  | তীব্রতা হ্রাস করা | Mitigate, Allay, Temper | Aggravate, Worsen |  |  | 
+232 | Ameliorate |  | উন্নতি হওয়া | Improve, Get Better | Deteriorate, Worsen |  |  | 
+232 | Amity |  | বন্ধুত্ব | Friendship, Harmony | Enmity, Hostility |  |  | 
+232 | Anemic |  | ১.রক্তাল্পতাগ্রস্ত ২.ফ্যাকাশে/বিবর্ণ | Hemoglobin deficiency, Pale, Pallid, Colorless | Florid |  | Synonym "Hemoglobin deficiency" is as printed; "Florid" is the antonym for both senses. | 
+232 | Antagonist |  | প্রতিদ্বন্দ্বী/শত্রু | Adversary, Opponent, Enemy | Ally, Friend |  |  | 
+232 | Apocryphal |  | কৃত্রিম, মেকি, জাল | Fake, Spurious, Counterfeit | Genuine, Authentic |  |  | 
+232 | Applause |  | প্রশংসা | Praise, Compliments | Criticism |  |  | 
+232 | Apprehend |  | ১. আশঙ্কা/দুশ্চিন্তা ২. গ্রেফতার করা ৩. বুঝতে পারা | Anxiety, Concern, Misgiving, Arrest, Capture, Seize, Understand, Comprehend | Apathy, Indifference, Release, Liberate, Free, Misunderstand |  | Bengali read by eye from a small scan; check the spelling. | 
+232 | Archaic |  | প্রাচীন | Obsolete, Out of date | New, Novel, Modern |  |  | 
+232 | Articulate |  | স্পষ্ট উচ্চারণ করা | Enunciate, To say clearly | Mumble, Gobble |  |  | 
+232 | Ascend |  | ১. আরোহণ করা ২. উপরে উঠা | Climb, Mount, Scale, Rise, Go up, Climb | Descend, Fall, Drop, Go down |  |  | 
+232 | Ascetic |  | কঠোর আত্মসংযমী | Austere, Abstemious, Abstinent | Hedonistic |  |  | 
+232 | Assent |  | একমত হওয়া | Agree, Acquiesce, Concur | Dissent, Disagree, Oppose |  |  | 
+232 | Assuage |  | ১. শান্ত করা ২. উপশম করা | Pacify, Appease, Calm, Alleviate, Mitigate, Ease | Excite, Agitate, Provoke, Aggravate, Worsen |  |  | 
+232 | Auspicious |  | অনুকূল | Propitious, Favorable | Unfavorable, Ominous |  |  | 
+233 | Banal |  | গতানুগতিক, একঘেয়ে | Trite, Hackneyed, Prosaic, Pedestrian | Stimulating, New, Novel, Original |  |  | 
+233 | Belittle |  | হেয়/অবজ্ঞা করা | Deride, Jeer, Scorn, Despise | Parise, Magnify, Glorify |  | Antonym printed as "Parise". | Parise=Praise
+233 | Boisterous |  | হৈচৈপূর্ণ | Clamorous, Uproarious | Peaceful, Tranquil |  |  | 
+233 | Barrier |  | বাধা, প্রতিবন্ধকতা | Bar, Hindrance, Barricade | Help, Aid, Support, Assistance, Backing |  |  | 
+233 | Baleful |  | ভীতিকর, ক্ষতিকর | Ominous, Malevolent | Salutary, Benevolent |  |  | 
+233 | Bellicose |  | মারমুখো/যুদ্ধবাজ | Belligerent, Hostile | Peaceful, Pacify |  |  | 
+233 | Bigotry |  | গোঁড়ামি/ অসহিষ্ণুতা | Intolerance, Prejudice | Broad-mindedness |  |  | 
+233 | Ban |  | নিষেধাজ্ঞা | Prohibition, Restriction | Unrestricted, Induct, Unprohibited |  | Antonym "Induct" may be a misprint (maybe "Indulge"). | Induct=
+233 | Brief |  | সংক্ষেপ | Short, Succinct, Concise, Laconic | Loquacious, Prolix, Copious |  |  | 
+233 | Brutal |  | নিষ্ঠুর/ পাশবিক | Cruel, Inhuman | Kind, Soft-hearted |  |  | 
+233 | Brittle |  | ভঙ্গুর | Fragile, Frangible, Tenuous, Breakable | Strong, Enduring, Resistible |  |  | 
+233 | Belligerent |  | যুদ্ধমান/ যুদ্ধবাজ | Militant, Combatant | Calm, Peaceful, Cooperative |  |  | 
+233 | Bondage |  | দাসত্ব | Slavery | Liberty, Freedom |  |  | 
+233 | Brevity |  | ১. সংক্ষিপ্ততা ২. ক্ষণস্থায়ী | Shortness, Pithiness, Temporality, Evanescence | Prolixity, Verbosity, Permanence |  |  | 
+233 | Barren |  | অনুর্বর, বন্ধ্যা | Arid, Infertile, Sterile, Unproductive, Unfruitful | Fertile, Fruitful, Lush, Productive, Prolific |  |  | 
+233 | Benefactor |  | উপকারক, দাতা | Donor, Patron, Sponsor, Supporter | Malefactor, Mischief Maker |  |  | 
+233 | Beneficial |  | হিতকরী, সহায়ক | Advantageous, Conducive, Useful, Congenial, Favorable, Helpful | Dangerous, Injurious, Destructive, Deleterious, Detrimental, Harmful |  | Synonym cell ends with a comma in the scan and may be cut off. | 
+233 | Blameworthy |  | নিন্দনীয় | Responsible, Guilty, Culpable | Spotless, Innocent |  | Synonym cell ends with a comma in the scan and may be cut off. | 
+233 | Boast |  | দর্প, অহমিকা | Brag, Pride | Gentle, Deprecate |  |  | 
+233 | Callow |  | অপরিপক্ক, অনভিজ্ঞ | Immature, Inexperienced | Mature, Adult, Grown-up |  |  | 
+233 | Capricious |  | খামখেয়ালি | Fickle, Changeable, Whimsical | Firm, Stable, Constant |  |  | 
+233 | Castigate |  | ভর্ৎসনা/নিন্দা করা | Chastise, Upbraid, Reproach | Praise, Laud, Eulogize |  |  | 
+233 | Chastise |  | শাস্তি দেয়া | Reprimand, Punish | Reward, Compensation |  |  | 
+233 | Cogent |  | অকাট্য | Convincing, Persuasive | Unconvincing, Unsound |  |  | 
+233 | Coherent |  | সংগতিপূর্ণ | Organized, Systematic | Confusing, Chaotic |  |  | 
+233 | Colossal |  | বিশাল | Vast, Mammoth, Gigantic, Large | Tiny, Minuscule, Minute |  |  | 
+233 | Commodious |  | জায়গাবহুল/প্রশস্ত | Roomy, Spacious, Capacious | Confined, Small, Narrow |  |  | 
+233 | Composure |  | ১. স্থিরতা/ধৈর্য ২. শান্ত অবস্থা | Poise, Aplomb, Calmness, Serenity | Discomposure, Hot-headedness |  |  | 
+233 | Concur |  | একমত হওয়া | Agree, Coincide, Correspond | Disagree, Diverge |  |  | 
+233 | Considerate |  | সুবিবেচক | Thoughtful, Kind, Caring | Thoughtless, Careless |  |  | 
+233 | Conversant |  | পরিচিত, অবগত | Acquainted, Familiar, Known | Ignorant, Unknown |  |  | 
+234 | Conviction |  | দৃঢ় বিশ্বাস | Firm belief, Confidence | Doubt, Suspicious |  |  | 
+234 | Cramped |  | গাদাগাদি/ঠাসাঠাসি | Crowded, Restricted | Spacious, Roomy |  |  | 
+234 | Crass |  | অমার্জিত/অভদ্র | Coarse, Crude, Uncouth | Refined, Polished |  |  | 
+234 | Crestfallen |  | মনমরা,নিরানন্দ | Downcast, Dejected, Depressed | Elated, Delighted, Glad |  |  | 
+234 | Culpable |  | নিন্দনীয় | Blameworthy, Censurable | Innocent |  |  | 
+234 | Cursory |  | দ্রুত চোখ বুলানো | Hasty, Perfunctory, Superficial | Careful, Thorough |  |  | 
+234 | Candid |  | অকপট,মনখোলা | Frank, Outspoken, Sincere | Artful, Crafty |  |  | 
+234 | Candor |  | অকপটতা, সরলতা | Frankness, Sincerity | Diplomacy, Dishonesty |  |  | 
+234 | Chaos |  | বিশৃঙ্খলা | Anarchy, Confusion, Disarray, Disorder, Mess, Turmoil, Tumult | Arrangement, Discipline, Order, Control |  |  | 
+234 | Coalesce |  | একীভূত/একত্র করা | Unify, Unite, Combine | Separate, Divide |  |  | 
+234 | Calamity |  | দুর্যোগ, দুঃখ | Mishap, Misery, Distress, Disaster, Affliction | Comfort, Benediction, Favor |  |  | 
+234 | Charitable |  | দানশীল/ সদয়/ ক্ষমাশীল | Generous, Forgiving, Humane, Benign, Beneficent | Miserly, Unkind, Malevolent |  |  | 
+234 | Catastrophe |  | আকস্মিক দুর্ঘটনা | Disaster, Calamity, Final Outcome | Comfort, Favor |  |  | 
+234 | Compel |  | বাধ্য করা | Enforce, Oblige, Drive | Set free, Release, Perimt |  | Antonym printed as "Perimt". | Perimt=Permit
+234 | Comprehend |  | উপলব্ধি করা | Grasp, Apprehend, Surrender | Exclude, Misapprehend, Mistake |  | Synonym "Surrender" looks odd for this meaning. | Surrender=
+234 | Compulsory |  | বাধ্যতামূলক | Mandatory, Obligatory | Voluntary, Optional |  |  | 
+234 | Controversy |  | মতবিরোধ | Dispute, Conflict, Argument, Feud | Unanimity, Accord, Agreement |  |  | 
+234 | Copious |  | প্রচুর | Plentiful, Abundant, Ample, Bountiful, Profuse | Scarce, Deficient, Scanty, Rate |  | Antonym printed as "Rate"; probably "Rare". | Rate=Rare
+234 | Contaminate |  | দূষিত করা | Pollute, Adulterate | Purify |  |  | 
+234 | Carnivorous |  | মাংসাশী | Cannibal, Flesh-Eating | Vegetarian |  |  | 
+234 | Conceal |  | লুকাইয়া/গুপ্ত করা | Hide, Cover, Mask, Veil | Reveal, Disclose, Unveil |  |  | 
+234 | Constructive |  | গঠনমূলক | Beneficial, Productive | Destructive, Useless |  |  | 
+234 | Contradict |  | অস্বীকার করা | Deny, Oppose, Refute | Corroborate, Support |  |  | 
+234 | Convict |  | দোষী বলে রায় দেয়া | Condemn, Find guilty | Find innocent |  |  | 
+234 | Cacophonous |  | শ্রুতিকটু, বেসুরো | Inharmonious, Harsh | Euphonious |  |  | 
+234 | Callous |  | নির্দয় | Unsympathetic, Cruel | Compassionate |  |  | 
+234 | Circumspect |  | বিচক্ষণ/সতর্ক | Prudent, Judicious, Discreet | Rash, Reckless |  |  | 
+234 | Clandestine |  | গুপ্ত/লুকায়িত | Secret, Covert, Furtive | Open, Revealed, Frank |  |  | 
+234 | Clarify |  | বোধগম্য করা | Elucidate, Explicate, Explain | Obscure |  |  | 
+234 | Clumsy |  | জবুথবু/আনাড়ি | Bungling, Inept, Awkward | Adroit, Deft, Dexterous |  |  | 
+234 | Coerce |  | বাধ্য করা | Force, Compel, Oblige | Request |  |  | 
+234 | Compulsion |  | জবরদস্তি | Coercion, Pressure | Voluntary, By Choice |  |  | 
+234 | Commence |  | আরম্ভ করা | Begin, Inaugurate, Initiate | Finish, Terminate, Cease |  |  | 
+234 | Commend |  | প্রশংসা করা | Praise, Extol, Laud, Acclaim | Criticize, Censure |  |  | 
+234 | Competent |  | যোগ্য, সক্ষম, দক্ষ | Skilled, Proficient, Capable | Incompetent, Unfit |  |  | 
+234 | Compliant |  | বাধ্য | Obedient, Docile, Amenable | Recalcitrant, Unruly |  |  | 
+234 | Comply |  | মেনে চলা | Conform, Obey, Observe | Disobey, Resist |  |  | 
+234 | Concern |  | উদ্বেগ/দুশ্চিন্তা | Anxiety, Apprehension | Indifference |  |  | 
+235 | Dilemma |  | বিপজ্জনক অবস্থা | Predicament, Quandary | Extrication, Advantage |  |  | 
+235 | Deliberate |  | সুচিন্তিত, স্বেচ্ছাকৃত | Intentional, Premeditated, Preplanned, Intended | Accidental, Rash, Hurried |  |  | 
+235 | Durable |  | টেকসই, স্থায়ী | Enduring, Long lasting | Brittle, Fragile |  |  | 
+235 | Deter |  | নিবৃত্ত করা | Prevent, Obstruct, Stop | Assist, Aid |  |  | 
+235 | Decay |  | ক্ষয়/ পতন | Decline, Collapse, Downfall | Growth, Strength, Robustness |  |  | 
+235 | Demonstrate |  | প্রদর্শন করা | Manifest, Explain | Veil, Mystify, Perplex, Mask |  |  | 
+235 | Deprive |  | বঞ্চিত করা | Debar, Hinder, Divest, Separate | Add, Assist, Refund, Repay |  |  | 
+235 | Desperate |  | মরিয়া/ বেপরোয়া | Daring, Reckless, Furious, Hopeless, Irretrievable | Clam, Peaceful, Hopeful |  | Antonym printed as "Clam". | Clam=Calm
+235 | Diligence |  | অধ্যবসায়/ পরিশ্রম | Assiduity, Industry, Intensity | Laziness, Indolence, Sluggishness |  |  | 
+235 | Doctrine |  | মতবাদ/ বিশ্বাস | Dogma, Precept, Tenet, Credence | Schism, Heterodoxy, Falsehood, Incredulity, Skepticism |  |  | 
+235 | Dispute |  | বিবাদ/ বিতর্ক করা | Argument, Disagreement, Contest, Variance | Agree, Accordance, Congruity |  |  | 
+235 | Distract |  | অন্যমনস্ক করা/ হতবুদ্ধি করা | Perplex, Bewilder, Confuse, Mystify, Embarrass | Placate, Mollify, Assuage, Mitigate, Conciliate |  |  | 
+235 | Dearth |  | দুষ্প্রাপ্যতা | Scarcity, Paucity, Shortage | Abundance, Plethora |  |  | 
+235 | Decry |  | নিন্দা করা | Censure, Disparage | Extol, Laud, Praise, Accolade |  |  | 
+235 | Defamatory |  | নিন্দামূলক কাজ | Libelous, Slanderous | Admiring, Laudatory |  |  | 
+235 | Deformation |  | বিকৃতি | Distortion, Monstrosity, Apoplexy | Smoothness, Wholeness |  | Synonym "Apoplexy" looks odd for this meaning. | Apoplexy=
+235 | Dejected |  | মনমরা/হতাশা | Dispirited, Despondent | Happy, Elated, Content |  |  | 
+235 | Denounce |  | নিন্দা করা | Condemn, Censure, Vilify | Commend, Extol, Laud |  |  | 
+235 | Deprecate |  | বিরুদ্ধে বলা | Disapprove, Condemn | Endorse, Approve |  |  | 
+235 | Despise |  | অবজ্ঞা/ঘৃণা করা | Scorn, Loathe, Abhor | Admire, Esteem |  |  | 
+235 | Didactic |  | শিক্ষামূলক | Educational, Instructive | Unsound, Erroneous |  |  | 
+235 | Din |  | হৈচৈ | Clamor, Uproar, Hubbub | Quiet, Silence |  |  | 
+235 | Discord |  | ১.মতানৈক্য ২. বেসুরো | Dispute, Conflict, Cacophony, Dissonance | Agreement, Consonance, Harmony |  |  | 
+235 | Disparage |  | অবজ্ঞা/হেয় করা | Criticize, Belittle, Deride | Applaud, Extol, Praise |  |  | 
+235 | Disparity |  | অসমতা | Inequality, Dissimilarity | Harmony, Accord |  |  | 
+235 | Docile |  | বাধ্য, বশ মানে এমন | Obedient, Compliant | Unruly, Disobedient |  |  | 
+235 | Dormant |  | সুপ্ত/অক্রিয় | Inactive, Sleeping, Latent | Active, Awake |  |  | 
+235 | Dreadful |  | ভয়ংকর | Terrible, Horrible, Tragic | Delightful, Pleasant |  |  | 
+235 | Dastard |  | কাপুরুষ | Cowardly, Craven, Timorous | Brave, Gallant, Valiant |  |  | 
+235 | Daunt |  | ভয় দেখানো | Intimidate, Frighten, Cow | Encourage, Hearten |  |  | 
+235 | Debacle |  | পতন/চরম পরাজয় | Disaster, Collapse, Fiasco | Success, Victory |  |  | 
+235 | Desultory |  | এলোমেলো | Indiscriminate, Random | Planned, Organized |  |  | 
+235 | Disheveled |  | অবিন্যস্ত/আলুথালু | Unkempt, Ruffled, Disorderly | Unruffled |  |  | 
+235 | Disinterested |  | নিরপেক্ষ | Impartial, Neutral, Unbiased | Biased, Prejudiced |  |  | 
+235 | Disparate |  | অসদৃশ | Dissimilar, Different | Similar, Like, Akin |  |  | 
+236 | Disperse |  | ছড়িয়ে দেয়া | Extend, Scatter, Spread | Amass, Inspissate |  |  | 
+236 | Dissent |  | মতভেদ করা | Disagree, Oppose, Differ | Agree, Concur, Coincide |  |  | 
+236 | Distinguished |  | সম্মানিত | Famous, Celebrated, Renowned | Unknown, Unfamiliar |  |  | 
+236 | Dulcet |  | সুরেলা/শ্রুতিমধুর | Mellifluous, Melodious | Harsh |  |  | 
+236 | Duplicity |  | কপটতা/ছলনা | Deceit, Deception, Fraud, Pretense, Trickery, Treachery | Frankness, Candor, Openness |  |  | 
+236 | Eccentric |  | অদ্ভুত | Peculiar, Odd, Strange | Common, Ordinary |  |  | 
+236 | Ecstasy |  | পরমানন্দ/উচ্ছ্বাস | Elation, Rapture, Euphoria | Agony, Depression |  |  | 
+236 | Eloquent |  | বাকপটু | Persuasive, Expressive | Inarticulate, Mumbling |  |  | 
+236 | Endanger |  | বিপদগ্রস্ত/বিপন্ন করা | Imperil, Jeopardize | Protect, Defend |  |  | 
+236 | Endorsement |  | অনুমোদন/ সমর্থন | Approbation, Commendation, Consent, Sanctions | Censure, Reprimand, Reproach |  |  | 
+236 | Endurance |  | সহিষ্ণুতা, ধৈর্য | Stamina, Durability, Patience | Frailty |  |  | 
+236 | Endure |  | সহ্য করা/ স্থায়ী হওয়া | Sustain, Tolerate, Undergo, Persist | Falter, Succinct, Disperse, Wane |  | Antonyms "Succinct" and "Disperse" look odd for this meaning. | Succinct=; Disperse=
+236 | Enmity |  | শত্রুতা, বিদ্বেষ | Animosity, Hostility, Malice | Amity, Friendship |  |  | 
+236 | Enthusiasm |  | গভীর আগ্রহ | Earnestness, Excitement, Fanaticism, Fervency, Fervor, Zeal | Apathy, Ennui, Unconcern |  |  | 
+236 | Erratic |  | ১. অনিয়মিত ২. খেয়ালি | Abnormal, Irregular, Capricious, Odd | Peculiar, Natural, Stable, Consistent |  | Bengali read by eye from a small scan; check the spelling. | 
+236 | Erroneous |  | ভ্রান্ত | Faulty, Improper, Aberrant, Iniquitous | Correct, Right, Proper |  |  | 
+236 | Essential |  | অপরিহার্য | Crucial, Indispensable, Vital, Important, Necessary | Unimportant, Trivial, Petty, Minor |  |  | 
+236 | Eternal |  | অনন্ত/ চিরস্থায়ী | Ceaseless, Everlasting, Infinite, Perpetual, Endless, Permanent, Perpetual | Ephemeral, Finite, Temporal, Transient, Transitory, Temporary |  | "Perpetual" is listed twice in the synonyms. | 
+236 | Excess |  | মাত্রাধিক্য, বাড়তি | Surplus, Excessive, Extra | Inadequate, Scarce |  |  | 
+236 | Execute |  | সম্পাদন করা/ প্রাণদণ্ড দেয়া | Accomplish, Achieve, Consummate, Perform | Block, Defeat, Unaccomplished |  |  | 
+236 | Exploit |  | ১. শোষণ করা ২. বীরত্বপূর্ণ কাজ | Manipulate, Utilize, Handle, Manage, Achievement, Feat, Deed | Ignore, Neglect, Waste, Failure, Defeat |  |  | 
+236 | Expose |  | প্রকাশ করা | Reveal, Disclose, Divulge | Hide, Conceal, Cover |  |  | 
+236 | Equivocal |  | দ্ব্যর্থক/অনিশ্চিত | Ambiguous, Vague, Unclear | Precise, Definite |  |  | 
+236 | Eulogy |  | প্রশংসাপূর্ণ উক্তি | Encomium, Panegyric | Criticism, Censure |  |  | 
+236 | Extraneous |  | ১. অপ্রাসঙ্গিক ২. বিদেশি | Not Germane, Irrelevant, Foreign, Alien, Exotic | Germane, Relevant, Indigenous |  |  | 
+236 | Elated |  | অত্যন্ত উল্লসিত | Overjoyed, Jubilant, Joyful | Sad, Dejected |  |  | 
+236 | Emancipate |  | মুক্ত করা | Liberate, Get rid of, Free | Enslave |  |  | 
+237 | Engender |  | উৎপাদন করা | Generate, Produce | Destroy, Obliterate |  |  | 
+237 | Ephemeral |  | ক্ষণস্থায়ী | Passing, Temporary, Transitory | Eternal, Lasting, Perpetual |  |  | 
+237 | Exaggeration |  | অতিরঞ্জন, চাপাবাজি | Hyperbole, Overstatement | Understatement, Sarcasm |  |  | 
+237 | Exonerate |  | অভিযোগ হতে মুক্তি দেয়া | Acquit, Absolve, Exculpate, Free | Prove Guilty, Convict |  |  | 
+237 | Exorbitant |  | অত্যধিক | Excessive, Too Much | Reasonable, Moderate |  |  | 
+237 | Extol |  | প্রশংসা করা | Praise, Eulogize, Exalt, Laud | Belittle, Criticize |  |  | 
+237 | Fascinating |  | আকর্ষণীয়/ মনোরম | Charming, Interesting | Boring, Dull |  |  | 
+237 | Facetious |  | সরস | Humorous, Jocular | Solemn |  |  | 
+237 | Facile |  | সহজসাধ্য | Weak, Easy, Docile, Flexible | Sturdy, Difficult, Determined, Inflexible |  |  | 
+237 | Facilitate |  | সহজতর করা | Expedite, Make easier | Hinder, Deter |  |  | 
+237 | Facsimile |  | হুবহু প্রতিলিপি | Copy, Duplicate, Replica | Original, Real |  |  | 
+237 | Fanciful |  | কল্পনাপ্রিয় | Eccentric, Humorous, Capricious, Whimsical, Imaginary | Literal, Real, Realistic, Accurate, Truthful |  | The last synonym reads "Imaginary" and the scan shows it twice. | 
+237 | Fastidious |  | খুঁতখুঁতে | Meticulous, Painstaking | Careless, Easygoing |  |  | 
+237 | Fatuous |  | বোকা/বোকাটে | Asinine, Inane, Silly, Idiotic | Judicious, Prudent, Sage |  |  | 
+237 | Favoritism |  | পক্ষপাতিত্ব | Partiality, Bias, Prejudice | Neutrality, Impartiality |  |  | 
+237 | Feasible |  | বাস্তবায়ন যোগ্য | Practicable, Workable | Impossible, Impractical |  |  | 
+237 | Feeble |  | দুর্বল/ অযোগ্য | Frail, Exhausted, Faint, Weak, Dull | Forceful, Stout, Strong, Vigorous |  |  | 
+237 | Fervor |  | উৎসাহ | Ardor, Zeal | Apathy |  |  | 
+237 | Feverish |  | অতি ব্যাকুল | Zealous, Ardent | Nonchalant, Calm |  |  | 
+237 | Fickle |  | খেয়ালি, চঞ্চল | Capricious, Fanciful, Whimsical | Firm, Steady, Stable |  |  | 
+237 | Fidelity |  | বিশ্বস্ততা | Faithfulness, Integrity, Loyalty, Honesty, Truthfulness | Infidelity, Disloyalty, Treachery, Faithlessness, Dishonesty |  |  | 
+237 | Flamboyant |  | আড়ম্বরপূর্ণ | Showy, Ornate | Simple |  |  | 
+237 | Flatter |  | তোষামোদ করা | Over-Praise, Cajole | Censure |  |  | 
+237 | Flaunt |  | জাহির করা | Show Off, Exhibit | Conceal, Hide |  |  | 
+237 | Flexible |  | নমনীয় | Elastic, Easy, Changeable, Yielding | Hard, Rigid, Inflexible, Tough, Stiff |  |  | 
+237 | Flimsy |  | পাতলা | Thin, Delicate, Slight, Frail | Strong, Brawny |  |  | 
+237 | Florid |  | বর্ণোজ্জ্বল | Ornate, Flowery, Adorned | Pallid, Bare, Unadorned |  |  | 
+237 | Flourishing |  | উন্নতি/সমৃদ্ধশীল | Prospering, Thriving | Declining, Failing |  |  | 
+237 | Fluctuate |  | ১. উঠামানা করা ২. মনস্থির না হওয়া | Change Often, Waver, Vacillate | Remain Steady, Be Resolute, Determine |  | Bengali "উঠামানা" may be a misprint of "ওঠানামা". | 
+237 | Folly |  | মূর্খতা/বোকামি | Foolishness, Idiocy, Silliness, Stupidity, Imprudence | Prudence, Discretion |  |  | 
+237 | Formidable |  | ভীতিকর/ দুর্দান্ত | Dreadful, Horrible | Enjoyable, Pleasant |  | Columns were skewed in the scan; synonym and antonym pairing is medium confidence. | 
+237 | Fright |  | আতঙ্ক, শঙ্কা | Panic, Dread, Horror | Fortitude, Courage, Bravery |  | Columns were skewed in the scan; synonym and antonym pairing is medium confidence. | 
+237 | Frugal |  | মিতব্যয়ী | Economical, Stingy, Thrifty | Extravagant, Wasteful |  |  | 
+238 | Funereal |  | শোকাবহ | Mournful, Dismal, Obsequies | Cheerful, Gay |  |  | 
+238 | Furtive |  | গোপনকৃত/চোরা | Stealthy, Clandestine, Secret | Unconcealed, Open |  |  | 
+238 | Fuzzy |  | ঝাপসা | Unmuddied, Murky, Obscure | Clear, Obvious |  |  | 
+238 | Futile |  | অকার্যকর/ ব্যর্থ | Ineffective, Vain | Effective, Successful |  |  | 
+238 | Gallant |  | সাহসী | Brave, Valiant, Valorous | Craven, Fearful |  |  | 
+238 | Gargantuan |  | প্রকাণ্ড | Colossal, Gigantic, Massive | Minuscule, Tiny, Minute |  |  | 
+238 | Gay |  | প্রফুল্ল, লম্পট | Cheerful, Joyful, Merry, Lewd | Depressed, Glum, Mournful, Sullen |  |  | 
+238 | Genuflect |  | নতজানু হওয়া | Kneel, Bow | Disrespectful, Arrogant |  |  | 
+238 | Gesture |  | অঙ্গভঙ্গি | Emblem, Omen, Symptom | Explication, Explicate |  |  | 
+238 | Glamorous |  | আকর্ষণীয় | Fascinating, Captivating, Charming | Unattractive, Dull |  |  | 
+238 | Glut |  | পেট পুরে খাওয়া | Overeat, Overdose, Gorge | Starve, Diet, Fast |  |  | 
+238 | Gluttony |  | অতিভোজন | Voracity, Overeating | Dieting, Starving, Fasting |  |  | 
+238 | Gracious |  | সদয়/ বিনয়ী | Courteous, Polite | Haughty, Arrogant |  |  | 
+238 | Grandiloquent |  | বাগাড়ম্বরপূর্ণ | Pompous, Showy, Bombastic | Simple, Humble, Simple |  |  | 
+238 | Gratify |  | তৃপ্ত করা | Please, Satisfy, Gladden, Reward | Displease, Dissatisfy, Disappoint |  |  | 
+238 | Grasp |  | উপলব্ধি | Understanding, Perception | Release |  |  | 
+238 | Gregarious |  | মিশুক | Sociable, Friendly | Reclusive, Lonely |  |  | 
+238 | Gullible |  | বিশ্বাসপ্রবণ (এর ফলে যে সহজে ঠকে) | Credulous, Susceptible, Trusting, Dupe | Suspicious, Untrusting, Hard to Convince |  |  | 
+238 | Hypocrisy |  | ভণ্ডামি/ কপটতা | Insincerity | Candor, Sincerity |  |  | 
+238 | Hackneyed |  | নীরস, একঘেয়ে | Commonplace, Banal, Trite | Novel, New, Exciting |  |  | 
+238 | Haphazard |  | এলোমেলো, বিশৃঙ্খলা | Random, Unmethodical, Chaotic, Disorganized, Messy | Organized, Planned, Ordered, Structured |  |  | 
+238 | Harmonious |  | শ্রুতিমধুর | Melodious, Mellifluous, Dulcet | Harsh |  |  | 
+238 | Hateful |  | ঘৃণাজনক | Loathsome, Abominable, Detestable | Desirable, Delightful, Pleasant |  |  | 
+238 | Haughty |  | উদ্ধত/ অহংকারী | Arrogant, Proud, Insolent | Ashamed, Humble |  |  | 
+238 | Hazard |  | বিপদ, ঝুঁকি | Danger, Risk, Peril, Threat | Protection, Safety |  |  | 
+238 | Heinous |  | ঘৃণ্য | Atrocious, Odious, Abominable | Laudable, Praiseworthy, Justifiable |  |  | 
+238 | Heterogeneous |  | বিবিধ মিশ্রণ | Mixed, Motley | Homogeneous, Uniform |  |  | 
+238 | Hilarious |  | হাসিখুশি | Very funny, Joyous | Sad, Gloomy |  |  | 
+238 | Honorary |  | অবৈতনিক | Voluntary, Unpaid | Salaried, Remunerated |  |  | 
+238 | Humane |  | দয়ালু | Compassionate, Forbearing | Brutal, Pitiless, Unfeeling, Inhumane |  |  | 
+238 | Humid |  | ভেজা | Wet, Moist, Close, Sticky, Oppressive | Dry, Arid, Parched |  |  | 
+238 | Humorous |  | কৌতুকপূর্ণ | Funny, Amusing | Grave, Serious |  |  | 
+238 | Husband |  | বুঝেশুনে খরচ করা | Conserve, Preserve, Save | Waste, Squander |  |  | 
+239 | Imitate |  | অনুকরণ করা | Counterfeit, Duplicate | Distort, Diverge |  |  | 
+239 | Idle |  | অলস | Lazy, Inactive, Indolent, Unemployed | Active, Employed, Industrious, Diligent |  |  | 
+239 | Ignoble |  | অসম্মানজনক/হীন | Despicable, Disgraceful | Laudable, Praiseworthy |  |  | 
+239 | Ignorant |  | অশিক্ষিত, মূর্খ | Uneducated, Stupid | Literate, Wise |  |  | 
+239 | Illicit |  | অবৈধ নিষিদ্ধ | Unlawful, Illegal | Licit, Legal |  |  | 
+239 | Illegible |  | অস্পষ্ট | Dim, Obscure, Vague | Legible, Defined, Clear |  |  | 
+239 | Illusory |  | অলীক/মিথ্যা | Deceptive, Illusive | Real, True, Actual |  |  | 
+239 | Immaculate |  | অনিন্দ্য/নিষ্কলঙ্ক | Impeccable, Spotless, Perfect | Impure, Unclean, Dirty |  |  | 
+239 | Immense |  | বিশাল/বিপুল | Vast, Enormous, Massive | Small, Tiny, Minuscule |  |  | 
+239 | Immutable |  | অপরিবর্তনীয় | Unchangeable, Unalterable | Alterable, Flexible |  |  | 
+239 | Impeccable |  | ১. নিখুঁত ২. নির্দোষ | Flawless, Immaculate, Blameless, Innocent | Defective, Faulty, Culpable |  |  | 
+239 | Impediment |  | বাধা/প্রতিবন্ধকতা | Block, Hindrance, Obstacle | Support, Aid, Assistance, Help |  |  | 
+239 | Imperishable |  | অবিনশ্বর/চিরস্থায়ী | Everlasting, Perpetual, Eternal | Evanescent, Destructible |  |  | 
+239 | Imperturbable |  | উত্তেজিত হয় না এমন | Unexcitable, Calm, Unruffled | Perdurable |  |  | 
+239 | Impervious |  | অভেদ্য | Impermeable, Impenetrable | Vulnerable |  |  | 
+239 | Impotent |  | অক্ষম | Feeble, Weak, Powerless, Nerveless | Powerful, Strong, Vigorous |  |  | 
+239 | Impromptu |  | পূর্বপ্রস্তুতিহীন | Improvised, Extemporaneous | Preplanned, Rehearsed |  |  | 
+239 | Improvise |  | পূর্ব প্রস্তুতি ছাড়া করা | Perform without preparation | Rehearse, Preplan |  |  | 
+239 | Imprudent |  | হঠকারী/বেপরোয়া | Rash, Reckless, Hasty | Judicious |  |  | 
+239 | Imprudent |  | অবিবেচক | Heedless, Inconsiderate, Indiscreet | Careful, Meticulous |  |  | 
+239 | Inadvertent |  | অনিচ্ছাকৃত | Unintentional, Accidental | Deliberate, On purpose |  |  | 
+239 | Inane |  | নির্বোধ, অসার | Foolish, Senseless | Meaningful, Sensible |  |  | 
+239 | Inanimate |  | প্রাণহীন/ নিস্তেজ | Insensible, Unconscious | Alive, Animate, Living, Stirring |  |  | 
+239 | Incense |  | রাগিয়ে দেওয়া | Anger, Infuriate | Pacify |  |  | 
+239 | Inception |  | আরম্ভ | Commencement, Origin, Outset | Completion, Termination |  |  | 
+239 | Incessant |  | বিরামহীন | Ceaseless, Interminable, Unceasing | Intermittent, Periodic, Sporadic |  |  | 
+239 | Incongruous |  | অনুপযুক্ত | Inappropriate | Suitable |  |  | 
+239 | Inclement |  | দুর্যোগপূর্ণ, ঝোড়ো | Rough, Raw, Nasty, Stormy | Clement, Mild, Pleasant |  |  | 
+239 | Inebriated |  | মাতাল | Drunk, Intoxicated | Sober, Abstemious |  |  | 
+239 | Indecent |  | অভদ্র/ অশ্লীল | Disgusting, Lewd, Obscene | Decent, Modest, Pure, Refined |  |  | 
+239 | Indifferent |  | উদাসীন/ নিরপেক্ষ | Apathetic, Neutral, Unbiased | Enthusiastic, Biased |  |  | 
+239 | Indigence |  | দারিদ্র্য | Destitution, Penury, Poverty | Abundance, Affluence, Wealthy |  |  | 
+239 | Indigenous |  | দেশীয় | Aboriginal, Native, Inborn, Innate, Home-grown | Outlandish, Foreign |  |  | 
+239 | Indispensable |  | অপরিহার্য | Essential, Mandatory, Binding | Unnecessary, Pointless |  |  | 
+240 | Ineluctable |  | অনিবার্য | Inevitable, Inexorable | Avoidable, Preventable |  |  | 
+240 | Inept |  | অদক্ষ, অনুপযুক্ত | Unskilled, Unsuitable | Skilled, Expert |  |  | 
+240 | Inevitable |  | অবশ্যম্ভাবী | Inescapable, Unavoidable | Preventable, Avoidable |  |  | 
+240 | Infidel |  | অবিশ্বাসী | Skeptic, Unbeliever, Freethinker | Devotee, Believer, True |  |  | 
+240 | Ingenious |  | উদ্ভাবনে দক্ষ | Inventive, Resourceful | Maladroit, Inept |  |  | 
+240 | Ingenious |  | সরল/ নির্দোষ | Candid, Frank, Sincere | Scheming, Clever |  | Headword printed as "Ingenious" for this sense (সরল/নির্দোষ); probably "Ingenuous". | hw:Ingenious=Ingenuous
+240 | Ingenuous |  | অকপট | Frank, Candid | Tricky |  |  | 
+240 | Inimical |  | শত্রুভাবাপন্ন | Hostile, Antagonistic | Friendly, Amiable |  |  | 
+240 | Innate |  | সহজাত | Congenital, Inborn, Inherent | Acquired, External |  |  | 
+240 | Innumerable |  | অত্যধিক | Excessive, Immoderate | Moderate |  |  | 
+240 | Insidious |  | ছলনাপূর্ণ | Deceitful, Tricky | Ingenuous, Frank |  |  | 
+240 | Insipid |  | স্বাদহীন/ একঘেয়ে | Tasteless, Savorless | Tasty, Palatable, Interesting |  |  | 
+240 | Insolent |  | উদ্ধত | Arrogant, Haughty | Respectful |  |  | 
+240 | Insolvent |  | ঋণ পরিশোধে অক্ষম | Penniless, Bankrupt, Badly-off | Solvent, Moneyed, Rich, Well-off |  |  | 
+240 | Instigate |  | উসকানি দেয়া | Provoke, Incite, Stimulate | Discourage, Dishearten |  |  | 
+240 | Integrity |  | সততা | Honesty, Probity, Uprightness | Dishonesty, Fraud |  |  | 
+240 | Interpret |  | ব্যাখ্যা করা/ অনুবাদ করা | Construe, Decipher, Decode, Elucidate | Confuse, Falsity, Misconstrue |  |  | 
+240 | Intimidate |  | ভয় দেখানো | Frighten, Daunt | Encourage |  |  | 
+240 | Intolerance |  | পরমত অসহিষ্ণুতা | Bigotry, Prejudice | Broad-Minded |  |  | 
+240 | Intrepid |  | নির্ভীক | Brave, Fearless, Dauntless | Cowardly, Craven |  |  | 
+240 | Intricate |  | জটিল | Difficult, Complex, Complicated | Plain, Direct, Clear, Obvious |  |  | 
+240 | Ire |  | ক্রোধ | Anger, Fury, Rage, Wrath | Goodwill |  |  | 
+240 | Irregular |  | নিয়মবহির্ভূত | Unconventional | Usual, Normal, Uniform |  |  | 
+240 | Irrelevant |  | অপ্রাসঙ্গিক | Unrelated, Impertinent | Pertinent, Germane |  |  | 
+240 | Irritable |  | খিটখিটে | Ill-Tempered, Peevish | Genial, Affable |  |  | 
+240 | Jargon |  | অর্থহীন বাক্য, অপভাষা | Dialect, Phraseology | Clear, Transparent, Understandabl |  | Antonym is cut off at the page edge ("Understandabl"). | Understandabl=Understandable
+240 | Jeer |  | ঠাট্টা করা | Mock, Ridicule, Sneer | Encourage, Praise, Inspire, Consol |  | Antonym is cut off at the page edge ("Consol"). | Consol=Console
+240 | Judicious |  | দূরদর্শিতা | Thoughtful, Sagacious, Prudent, Sensible | Unwise, Silly, Imprudent, Foolish |  |  | 
+240 | Jumble |  | মিশ্রিত করা | Confuse, Mix-up, Disorganize | Arrange, Order, Organize |  |  | 
+240 | Justice |  | ন্যায় বিচার | Equity, Fairness, Integrity, Impartiality | Injustice, Wrong, Partiality, Unfairness |  |  | 
+240 | Juvenile |  | কৈশোর | Adolescent, Youthful, Childish, Immature | Senile, Mature, Manly, Adult, Aged |  |  | 
+240 | Jeopardy |  | বিপদ | Danger, Peril | Security, Safety |  |  | 
+240 | Jocund |  | হাসিখুশি | Jovial, Jolly, Cheerful | Temperate, Modest, Grave |  |  | 
+241 | Kindle |  | উৎসাহিত করা | Ignite, Excite, Inspire | Discourage, Inanimate |  |  | 
+241 | Kinetic |  | গতি সম্পর্কীয় | Relating to motion, Characterized by Movement | Stagnant, Motionless |  |  | 
+241 | Kudos |  | খ্যাতি / যশ | Praise, Glory, Honor, Status | Disrespect, Blame, Criticism |  |  | 
+241 | Keen |  | ১. সূক্ষ্মবুদ্ধি/চতুর ২. ব্যগ্র | Astute, Shrewd, Eager, Enthusiastic | Blunt, Indifferent |  |  | 
+241 | Kernel |  | শাঁস / শস্য | Fruit, Atom, Germ, Grain | Exterior, Outside, Periphery, Surface |  |  | 
+241 | Knot |  | বন্ধন | Joint, Connection, Combine | Opening, Disband |  |  | 
+241 | Kinfolk |  | আত্মীয়বর্গ | Kith, Kinship, Clan | Ancestry, Descent, Pedigree |  |  | 
+241 | Keynote |  | মর্ম / মূলকথা | Essence, Core, Gist | Unimportant, Minor |  |  | 
+241 | Lackluster |  | নিষ্প্রভ / নিষ্প্রাণ | Drab, Humdrum, Dull | Vivacious, Lively, Vibrant |  |  | 
+241 | Lately |  | সম্প্রতি | Recently, At the recent time | Formerly, Prior |  |  | 
+241 | Laborious |  | কষ্টসাধ্য | Arduous, Burdensome, Tedious | Easy, Light, Simple |  |  | 
+241 | Laconic |  | সংক্ষিপ্ত | Succinct, Terse, Pithy, Concise | Voluble, Verbose, Wordy |  |  | 
+241 | Lament |  | অনুতাপ করা | Bemoan, Grieve, Mourn, Regret | Celebrate, Rejoice, Laugh |  |  | 
+241 | Languid |  | নিস্তেজ/দুর্বল | Feeble, Weak, Weary | Energetic |  |  | 
+241 | Languish |  | দুর্বল করা | Decline, Fade, Faint, Sicken, Weaken, Wither | Flourish, Thrive, Brighten |  |  | 
+241 | Laudatory |  | প্রশংসামূলক | Praising, Complimentary | Blameworthy |  |  | 
+241 | Lavish |  | অমিতব্যয়ী | Extravagant, Prodigal, Spendthrift | Thrifty |  |  | 
+241 | Lean |  | কৃশ / রোগা | Meager, Bony, Thin, Skinny, Slender | Fat, Brawny, Plump |  |  | 
+241 | Legible |  | সুবোধ্য | Clear, Intelligible, Neat, Readable | Indistinct, Unintelligible, Unreadable |  |  | 
+241 | Licentious |  | অসচ্চরিত্র | Immoral, Wicked, Depraved, Corrupt | Moral, Ethical |  |  | 
+241 | Limpid |  | স্বচ্ছ | Glassy, Lucid, Translucent, Transparent | Muddy, Torpid, Obscure |  |  | 
+241 | Linger |  | দেরিতে যাওয়া | Tarry, Loiter | Leave, Hastily |  |  | 
+241 | Loath |  | অনিচ্ছুক | Averse, Disinclined, Hostile | Enthusiastic, Avid |  |  | 
+241 | Loathe |  | ঘৃণা করা | Hate, Detest, Despise, Look down on, Nauseate | Admire, Adore, Esteem, Hallow, Idolize, Revere, Venerate, Cherish |  |  | 
+241 | Lofty |  | সম্মানিত | Eminent, Majestic, Towering, Dignified | Mean, Ordinary, Low |  |  | 
+241 | Loquacious |  | বাচাল | Talkative, Garrulous | Taciturn, Reticent |  |  | 
+241 | Loyalty |  | বিশ্বস্ততা | Fidelity, Trustworthiness | Disloyalty, Falseness |  |  | 
+241 | Lucid |  | উজ্জ্বল / স্পষ্ট | Limpid, Transparent, Distinct | Ambiguous, Obscure, Vague |  |  | 
+241 | Ludicrous |  | হাস্যযোগ্য | Funny, Ridiculous, Comic, Laughable | Tragic, Serious, Mournful, Sorrowful |  |  | 
+241 | Luster |  | ঔজ্জ্বল্য | Brightness, Glare | Dullness, Lifelessness |  |  | 
+242 | Magnify |  | ১. বিবর্ধিত করা ২. প্রশংসা করা | Enlarge, Amplify, Praise, Admire, Extol, Laud | Diminish, Reduce, Belittle |  |  | 
+242 | Malice |  | অপকারের ইচ্ছা, বিদ্বেষ | Malevolence, Spite, Rancor | Benevolence, Generosity |  |  | 
+242 | Malicious |  | বিদ্বেষপরায়ণ | Spiteful, Malevolent | Friendly, Sociable |  |  | 
+242 | Meager |  | অল্প / নগণ্য | Scanty, Paltry, Sparse | Copious, Plentiful |  |  | 
+242 | Mediocre |  | গড়মান | Average, Medium, Ordinary | Distinctive, Extraordinary, Brilliant |  |  | 
+242 | Medley |  | বিভিন্ন বস্তুর মিশ্রণ | Assortment, Conglomeration | Homogeneous, Same |  |  | 
+242 | Meek |  | বিনম্র | Gentle, Submissive, Mild | Fierce, Savage, Exciting |  |  | 
+242 | Melancholy |  | মনমরা | Gloomy, Dejected | Vivacious, Happy |  |  | 
+242 | Messy |  | বিশৃঙ্খল / নোংরা | Cluttered, Littered | Neat, Tidy |  |  | 
+242 | Meticulous |  | খুঁতখুঁতে | Painstaking, Fastidious, Fussy, Perfectionist | Careless, Uncritical |  |  | 
+242 | Microscopic |  | ক্ষুদ্রাতিক্ষুদ্র | Infinitesimal, Minute | Large, Immense |  |  | 
+242 | Miserable |  | দুঃখ জনক | Crestfallen, Misery, Agony, Grief | Joyous, Happy, Happiness |  |  | 
+242 | Mitigate |  | উপশম করা | Palliate, Ameliorate | Increase, Intensity |  |  | 
+242 | Moderate |  | মধ্যম | Temper, Medium | Intensified, Excessive |  |  | 
+242 | Modesty |  | ভদ্রতা | Humility, Bashfulness | Vanity, Conceit, Depravity |  |  | 
+242 | Mollify |  | শান্ত করা | Appease, Calm, Pacify | Exasperate, Provoke, Exacerbate |  |  | 
+242 | Momentous |  | অতি গুরুত্বপূর্ণ | Significant, Important | Trivial, Unimportant |  |  | 
+242 | Monotonous |  | একঘেয়ে | Boring, Dull, Obstinate, Stubborn, Inflexible | Interesting, Docile |  |  | 
+242 | Monstrous |  | প্রকাণ্ড, বিরাট | Huge, Titanic, Colossal | Tiny, Minute |  |  | 
+242 | Motley |  | বিবিধ বস্তুর মিশ্রণ | Different, Heterogeneous | Uniform, Homogenous |  | Antonym spelled "Homogenous" as printed. | Homogenous=Homogeneous
+242 | Mourn |  | বিলাপ করা | Bemoan, Bewail, Deplore, Lament | Celebrate, Rejoice |  |  | 
+242 | Nadir |  | নিম্নতম বিন্দু | Lowest Point, Base, Foot | Apex, Zenith, Peak |  |  | 
+242 | Nasty |  | নোংরা | Foul, Impure, Obscene, Offensive, Disagreeable | Nice, Pleasant, Pure, Agreeable |  |  | 
+242 | Nefarious |  | দুশ্চরিত্র | Wicked, Vile, Depraved, Immoral | Honest, Good |  |  | 
+242 | Negligent |  | অমনোযোগী | Careless, Inattentive | Thoughtful, Caring |  |  | 
+242 | Nimble |  | চটপটে | Agile, Light-footed | Lethargic, Tired |  |  | 
+242 | Nominal |  | নামমাত্র, অত্যল্প | So-called, Symbolic, Theoretical, Trivial, Insignificant | Actual, Genuine, Important, Essential, Substantial |  |  | 
+242 | Notion |  | ধারণা | Concept, Opinion, Thought, Supposition, Speculation | Reality, Fact, Actuality, Conviction |  |  | 
+242 | Notorious |  | কুখ্যাত | Infamous, Disreputable | Noble, Honorable |  |  | 
+242 | Novice |  | নবশিক্ষার্থী | Learner, Tyro, Beginner | Master, Chief, Principal |  |  | 
+242 | Noxious |  | ক্ষতিকর | Harmful, Unwholesome | Friendly |  |  | 
+243 | Obesity |  | অতিরিক্ত মোটা | Bulk, Fatness, Fleshiness, Corpulence | Thinness, Leanness, Skinniness |  |  | 
+243 | Objectionable |  | আপত্তিজনক | Offensive, Obnoxious, Detestable | Pleasant, Acceptable, Agreeable |  |  | 
+243 | Obscene |  | অশ্লীল | Dirty, Filthy, Foul, Indecent, Offensive | Decent, Decorous, Wholesome |  |  | 
+243 | Obstinate |  | জেদি/একগুঁয়ে | Adamant, Obdurate, Stubborn | Obedient, Polite |  |  | 
+243 | Opportune |  | সময়োচিত | Timely, Well timed | Untimely |  |  | 
+243 | Opulence |  | ১. বিত্ত. বৈভব ২. প্রাচুর্য | Affluence, Wealth, Riches, Abundance, Profusion | Paucity, Poverty, Scarcity, Dearth |  |  | 
+243 | Obtuse |  | নির্বোধ | Dull, Dumb, Stupid, Stolid, Foolish | Intelligent, Brilliant, Meritorious |  |  | 
+243 | Occult |  | রহস্যময় | Hidden, Mysterious, Obscure | Clear, Familiar, Plain, Open |  |  | 
+243 | Optimistic |  | আশাবাদী | Hopeful, Confident, Positive, Cheerful | Pessimistic, Dark, Negative, Cynical |  |  | 
+243 | Outset |  | প্রারম্ভ | Commencement, Inauguration, Inception | Conclusion, Close, Termination |  |  | 
+243 | Obligation |  | বাধ্যবাধকতা | Accountability, Compulsion, Responsibility | Exemption, Freedom |  |  | 
+243 | Obliterate |  | নিশ্চিহ্ন করা | Eradicate, Annihilate, Wipe Out | Construct, Create |  |  | 
+243 | Ominous |  | ভীতিকর | Threatening, Intimidating | Propitious, Favorable |  |  | 
+243 | Opaque |  | অস্বচ্ছ/ দুর্বোধ্য | Non-Transparent, Abstruse, Unintelligible | Transparent, Lucid |  |  | 
+243 | Pacific |  | শান্তিপ্রিয় | Imperturbable, Peaceful, Tranquil, Calm, Serene, Placid | Excited, Frantic, Turbulent, Agitated |  |  | 
+243 | Painstaking |  | কাজে যত্নশীল | Thorough, Meticulous | Negligent, Careless |  |  | 
+243 | Paltry |  | জঘন্য/ নীচ, নগণ্য | Contemptible, Worthless, Petty, Trifling, Trivial | Noble, Significant, Momentous |  |  | 
+243 | Pauper |  | দরিদ্র | Destitute, Poor | Abundant, Affluent |  |  | 
+243 | Provincial |  | আঞ্চলিক | Local, Zonal, Area | Worldwide, Global |  |  | 
+243 | Parsimonious |  | মিতব্যয়ী | Frugal, Thrifty, Sparing | Extravagant, Spendthrift |  |  | 
+243 | Partisan |  | ১. সমর্থক ২. পক্ষপাতপূর্ণ | Supporter, Advocate, Biased, Subjective, Partial | Adversary, Impartial, Neutral |  |  | 
+243 | Passion |  | ভাবাবেগ | Agitation, Emotion, Perturbation | Restraint, Tranquility |  |  | 
+243 | Peculiar |  | ১. নিজস্ব বৈশিষ্ট্যপূর্ণ ২. অদ্ভুত | Individual, Particular, Odd, Strange, Unusual | General, Common, Usual, Expected |  |  | 
+243 | Pedestrian |  | নীরস | Prosaic, Ordinary | Exciting, Striking |  |  | 
+243 | Penury |  | দারিদ্র্য | Poverty, Indigence, Destitution | Opulence, Wealth, Riches |  |  | 
+243 | Perfunctory |  | ভাসাভাসা | Cursory, Superficial | Thorough, Thoughtful |  |  | 
+243 | Perilous |  | বিপজ্জনক | Hazardous, Risky | Safe |  |  | 
+243 | Perishable |  | পচনশীল/ নশ্বর বস্তু | Subject To Decay, Short-Lived | Durable, Lasting |  |  | 
+243 | Perpetual |  | চিরস্থায়ী | Ceaseless, Eternal, Everlasting | Ephemeral, Finite, Transient |  |  | 
+244 | Perplex |  | হতবুদ্ধি করা | Confuse, Bewilder, Mystify, Puzzle | Simplify, Enlighten, Explain, Elucidate |  |  | 
+244 | Persuade |  | প্ররোচিত | Urge, Entice, Coax, Induce, Impel, Allure | Restrain, Deter, Repel, Dissuade, Hinder |  |  | 
+244 | Pertinent |  | প্রাসঙ্গিক | Germane, Relevant | Extraneous, Irrelevant |  |  | 
+244 | Perturb |  | বিক্ষুব্ধ করা | Disturb, Bother, Upset | Calm, Pacify, Soothe |  |  | 
+244 | Pessimism |  | হতাশা | Gloom, Hopelessness | Optimism, Sanguinity |  |  | 
+244 | Petulant |  | খিটখিটে | Peevish, Fretful, Irritable | Agreeable |  |  | 
+244 | Philanthropy |  | জনসেবা | Charity, Benevolence | Nastiness, Malevolence |  |  | 
+244 | Plethora |  | আধিক্য | Excess, Surplus, Over, Abundance | Shortage, Scarcity, Dearth |  |  | 
+244 | Potent |  | ১. শক্তিশালী ২. কার্যকর | Powerful, Formidable, Effective, Efficacious | Weak, Impotent, Ineffectual |  |  | 
+244 | Pragmatic |  | বাস্তবধর্মী | Realistic, Practical, Materialistic | Quixotic, Impractical, Imaginative |  |  | 
+244 | Precarious |  | ১. নিরাপত্তাহীন ২. অনিশ্চিত | Perilous, Hazardous, Risky, Uncertain, Vague | Safe, Secure, Certain, Sure |  |  | 
+244 | Precede |  | অগ্রবর্তী হওয়া | Go before in position, Lead, Forerun, Forego | Follow, Pursue |  |  | 
+244 | Precise |  | স্পষ্ট | Exact, Definite, Specific | Vague |  |  | 
+244 | Predicament |  | বিপজ্জনক অবস্থা | Dilemma, Impasse, Deadlock | Favorable, Fortunate |  |  | 
+244 | Preposterous |  | সম্পূর্ণ অযৌক্তিক | Absurd, Ridiculous, Ludicrous | Reasonable |  |  | 
+244 | Pretend |  | ভান করা/ দাবি করা | Assume, Feign, Profess, Claim | Display, Exhibit, Reveal |  |  | 
+244 | Privilege |  | সুযোগ-সুবিধা | Advantage, Prerogative, License | Prohibition, Inhibition |  |  | 
+244 | Probity |  | সততা | Integrity, Honesty | Duplicity |  |  | 
+244 | Prodigal |  | অপব্যয়ী | Spendthrift, Wasteful | Frugal, Economical |  |  | 
+244 | Prodigious |  | ১. অস্বাভাবিক ২. সুবিশাল | Extraordinary, Odd, Gigantic, Colossal | Ordinary, Common, Small, Diminutive |  |  | 
+244 | Proficient |  | দক্ষ | Adroit, Deft, Dexterous | Inept, Clumsy |  |  | 
+244 | Proficient |  | যোগ্য | Accomplished, Adept, Competent, Ingenious | Awkward, Inexpert, Untrained |  |  | 
+244 | Profound |  | গভীর জ্ঞানপূর্ণ | Wise, Sagacious, Sage | Stupid, Inane, Idiotic |  |  | 
+244 | Profuse |  | ১. প্রচুর ২. অপব্যয়ী | Copious, Abundant, Extravagant, Prodigal | Inadequate, Scarce, Miserly |  | Antonym "Miserly" was hard to read in the scan; check it. | Miserly=
+244 | Prolific |  | প্রচুর উৎপাদনশীল | Productive, Fertile, Creative | Barren, Sterile |  |  | 
+244 | Prominent |  | প্রসিদ্ধ | Illustrious, Celebrated, Eminent, Renowned | Unimportant, Trivial, Trifling, Insignificant |  |  | 
+244 | Promote |  | উন্নত করা | Exalt, Raise, Lift, Elevate, Advance | Degrade, Hinder, Dishonor |  |  | 
+244 | Prompt |  | তৎপর/চটপটে | Alert, Agile, Nimble | Sluggish, Slow |  |  | 
+244 | Propagate |  | ১. বংশ বিস্তার করা ২. প্রচার করা | Multiply, Reproduce, Disseminate, Circulate | Reduce, Diminish, Hush Up |  |  | 
+244 | Prowess |  | দক্ষতা, মেধা, নিপুনতা | Expertise, Dexterity, Talent, Adeptness | Inability, Cowardice, Ineptitude |  | Bengali read with low confidence. | 
+244 | Prosaic |  | গতানুগতিক/একঘেয়ে | Dull, Humdrum, Trite, Vapid | Fascinating, Exciting |  |  | 
+245 | Prudence |  | পরিণামদর্শিতা, সুবুদ্ধি | Caution, Vigilance, Watchfulness | Carelessness, Recklessness |  |  | 
+245 | Puerile |  | শিশুসুলভ | Childish, Foolish | Mature, Intelligent |  |  | 
+245 | Pugnacious |  | ঝগড়াটে | Quarrelsome, Contentious | Peaceful, Friendly |  |  | 
+245 | Punish |  | শাস্তি দেয়া | Rebuke, Chastise, Castigate, Beat | Reward, Remunerate, Compensate |  |  | 
+245 | Pusillanimous |  | ভীরু | Cowardly, Timid, Timorous | Brave, Valiant, Valorous |  |  | 
+245 | Quest |  | অনুসন্ধান/ অন্বেষণ | Exploration, Investigation | Disregard, Inactivity |  |  | 
+245 | Quit |  | ত্যাগ করা/ মুক্ত করা | Abandon, Give up, Relinquish | Continue, Endure, Persist |  |  | 
+245 | Rage |  | প্রচণ্ড ক্রোধ/ক্রোধান্বিত | Anger, Exasperation, Fury, Wrath | Forbearance, Patience, Self-control |  |  | 
+245 | Random |  | এলোমেলো | Haphazard, Unplanned | Deliberate, Intentional |  |  | 
+245 | Ransack |  | তন্ন তন্ন করে খোঁজা | Rummage, Search | Leave, Undisturbed |  |  | 
+245 | Rash |  | হঠকারী | Reckless | Prudent |  |  | 
+245 | Raucous |  | কর্কশ | Harsh, Cacophonous | Dulcet |  |  | 
+245 | Ravage |  | ধ্বংস করা | Destroy, Abolish | Make, Construct |  |  | 
+245 | Resemblance |  | সাদৃশ্য, মিল | Similarity, Semblance, Similitude, Likeness | Assortment, Diversity, Multiplicity, Variety |  |  | 
+245 | Rebellious |  | বিদ্রোহী সুলভ / অবাধ্য | Mutinous, Disobedient, Unruly | Patriotic, Loyal, Obedient |  |  | 
+245 | Reconcile |  | আপোষ করা | Conciliate, Restore | Alienate, Isolate |  |  | 
+245 | Refute |  | যুক্তিখণ্ডন করা | Disprove, Confute, Rebut | Prove, Confirm |  |  | 
+245 | Relinquish |  | দাবি/পদত্যাগ করা | Give Up, Abdicate | Retain, Hold |  |  | 
+245 | Reluctant |  | অনিচ্ছুক | Loath, Averse | Enthusiastic, Willing |  |  | 
+245 | Renovate |  | মেরামত করা | Revamp, Restoration | Damage, Destroy |  |  | 
+245 | Repent |  | অনুশোচনা করা | Be Penitent, Be contrite, Remorse | Remorseless |  |  | 
+245 | Reprehensible |  | তিরস্কারযোগ্য | Culpable, Blameworthy | Praiseworthy |  |  | 
+245 | Reprove |  | তিরস্কার করা | Rebuke, Reproach, Chide | Praise, Applaud |  |  | 
+245 | Repudiate |  | অস্বীকার করা | Disclaim, Disavow | Accept, Applaud |  |  | 
+245 | Reservation |  | দ্বিধা-দ্বন্দ্ব | Hesitancy, Uncertainty | Confidence |  |  | 
+245 | Resolution |  | দৃঢ় সংকল্প | Determination | Vacillation |  |  | 
+245 | Resourceful |  | সৃজনশক্তিসম্পন্ন | Inventive, Creative, Ingenious | Uninventive |  |  | 
+245 | Retreat |  | পিছিয়ে আসা | Withdraw, Move Back | Advance, Progress |  |  | 
+245 | Revoke |  | বাতিল/ রদ করা | Repeal, Annul | Validate, Authenticate |  |  | 
+245 | Robust |  | বলবান | Healthy, Sound, Strong | Delicate, Frail, Infirm |  |  | 
+245 | Ruthless |  | নির্দয়, নির্মম | Barbarous, Brutal, Ferocious, Merciless | Courteous, Gentle, Humane |  |  | 
+246 | Sacred |  | পবিত্র/ ধর্ম বিষয়ক | Blessed, Religious, Divine, Spiritual | Evil, Profane, Secular, Worldly |  |  | 
+246 | Salient |  | প্রধান/ স্পষ্ট | Noticeable, Obvious, Prominent, Striking | Inconspicuous, Hidden, Obscure, Concealed |  |  | 
+246 | Salutary |  | স্বাস্থ্যকর | Salubrious, Wholesome | Deleterious, Harmful |  |  | 
+246 | Sanguine |  | আশাবাদী | Optimistic, Hopeful | Pessimistic |  |  | 
+246 | Scanty |  | স্বল্প/ দুষ্প্রাপ্য | Sparse, Scant, Meager | Copious, Plentiful |  |  | 
+246 | Scold |  | তিরস্কার করা | Admonish, Censure, Reprimand | Praise, Commend, Applaud, Complement |  | Antonym printed as "Complement". | Complement=Compliment
+246 | Scorn |  | অবজ্ঞা/ ঘৃণা করা | Despise, Disdain, Contemn | Admire, Esteem |  |  | 
+246 | Sedate |  | শান্ত | Serene, Clam, Grave, Quiet, Tranquil | Agitated, Disturbed, Excited, Indiscreet |  | Synonym printed as "Clam". | Clam=Calm
+246 | Shabby |  | পুরাতন/ ঘৃণ্য/ জীর্ণ | Destitute, Needy, Inferior, Scanty, Despicable | Affluent, Opulent, Ample, Wealthy |  |  | 
+246 | Shrewd |  | বিচক্ষণ/ ধূর্ত | Crafty, Cunning, Foxy, Tricky, Sagacious | Candid, Frank, Ingenuous |  |  | 
+246 | Sincere |  | অকৃত্রিম | Unfeigned | Feigned |  |  | 
+246 | Slander |  | নিন্দা/ কুৎসা | Calumny, Defamation, Scandal | Applause, Commendation, Praise |  |  | 
+246 | Slender |  | পাতলা/ সামান্য | Lean, Meager, Narrow, Scanty, Slim, Tenuous | Broad, Bulky, Thick, Wide |  |  | 
+246 | Slump |  | কমে যাওয়া | Dip, Decline | Increase, Rise |  |  | 
+246 | Sophisticated |  | আধুনিক | Complicated, Complex | Simple, Old-Fashioned |  |  | 
+246 | Sordid |  | নোংরা/ অসম্মানজনক | Filthy, Squalid, Ignoble, Base | Clean, Honorable, Noble |  |  | 
+246 | Spectacular |  | চমকপ্রদ, চোখ ধাঁধানো | Breathtaking, Fabulous, Stunning | Ordinary, Mundane, Lackluster |  |  | 
+246 | Splendid |  | জাঁকালো | Gorgeous, Glorious, Magnificent | Dull, Obscure, Tame, Inglorious |  |  | 
+246 | Spurious |  | জাল/ কৃত্রিম | Fake, Counterfeit, Sham, Apocryphal | Genuine, Real |  |  | 
+246 | Squander |  | অপচয় করা | Waste, Dissipate | Save, Hoard |  |  | 
+246 | Stagnant |  | নিশ্চল/ প্রাণহীন/ নীরস | Motionless, Lifeless | Flowing, Lively |  |  | 
+246 | Stamina |  | পরিশ্রম সহ্য করার শক্তি | Endurance, Energy | Weakness |  |  | 
+246 | Steadfast |  | দৃঢ়/ অটল | Unwavering | Wavering |  |  | 
+246 | Sterilize |  | জীবাণুমুক্ত করা | Disinfect, To free from germ | Pollute |  |  | 
+246 | Stingy |  | কৃপণ | Miser | Munificent |  |  | 
+246 | Succinct |  | সংক্ষিপ্ত ও যথাযথ | To the point, Brief | Discursive |  |  | 
+246 | Sumptuous |  | বিলাসবহুল | Expensive, Luxurious | Cheap, Ordinary |  |  | 
+246 | Superficial |  | ভাসা ভাসা | Cursory, Perfunctory | Thorough |  |  | 
+246 | Superfluous |  | প্রয়োজনের অতিরিক্ত | Unnecessary, Surplus | Indispensable |  |  | 
+246 | Surfeit |  | আধিক্য | Glut, Excess, Plethora, Over, Abundance | Shortage, Scarcity, Dearth, Want |  |  | 
+246 | Surmise |  | অনুমান | Conjecture, Guess | Certainly, Verify, Prove |  | Antonym "Certainly" is as printed and looks odd. | Certainly=
+246 | Surreptitious |  | গুপ্ত, চোরাগোপ্তা | Secret, Clandestine, Covert | Open, Overt |  |  | 
+246 | Swift |  | চটপটে/ দ্রুত | Hasty, Rapid, Prompt | Sluggish |  |  | 
+246 | Sycophant |  | চাটুকার | Flatterer, Fawner | Dignified Person |  |  | 
+247 | Taciturn |  | মৌনস্বভাব, স্বল্পভাষী | Reticent, Reserved, Cold, Uncommunicative, Distant, Introverted | Talkative, Communicative, Eloquent, Verbose, Wordy, Loquacious, Garrulous |  |  | 
+247 | Tangible |  | ধরা-ছোঁয়া যায় এমন | Palpable, Touchable, Concrete | Intangible, Abstract |  |  | 
+247 | Tardy |  | ধীরগতি/ বিলম্বিত | Sluggish, Late | Speedy, Punctual |  |  | 
+247 | Temerity |  | হঠকারিতা | Audacity, Forwardness, Recklessness | Caution, Prudence, Modesty, Politeness |  |  | 
+247 | Temporary |  | অস্থায়ী | Fleeting, Evanescent | Everlasting, Durable |  |  | 
+247 | Tentative |  | চূড়ান্ত/ নিশ্চিত নয় | Not final, Unconfirmed | Final, Conclusive |  |  | 
+247 | Terse |  | সংক্ষিপ্ত | To the point, Succinct | Verbose |  |  | 
+247 | Thrive |  | প্রস্ফুটিত করা | Develop, Flourish, Grow | Languish, Stagnate, Decrease |  |  | 
+247 | Timorous |  | ভীরু | Timid, Pusillanimous | Intrepid, Fearless |  |  | 
+247 | Torpid |  | নিস্তেজ | Sluggish, Listless, Lethargic | Energetic, Vigorous |  |  | 
+247 | Tortuous |  | আঁকাবাঁকা/ সর্পিল | Winding, Sinuous, Meandering | Straight, Direct |  |  | 
+247 | Torture |  | নির্যাতন করা | Agony, Anguish, Torment, Distress | Relief, Ease, Delight, Happiness |  |  | 
+247 | Tractable |  | বশ মানে এমন | Docile, Amenable, Compliant | Refractory, Unruly |  |  | 
+247 | Traitor |  | প্রতারক | Betrayer, Deceiver, Defector, Deserter | Defender, Loyalist, Supporter |  |  | 
+247 | Tranquil |  | শান্ত/ স্থির | Calm, Composed, Dispassionate, Unruffled | Excited, Frantic, Turbulent, Wild |  |  | 
+247 | Treachery |  | বিশ্বাস ঘাতকতা | Perfidy, Betrayal, Treason | Loyalty, Faithfulness |  |  | 
+247 | Trifling |  | তুচ্ছ/ প্রায় মূল্যহীন | Trivial, Paltry | Significant |  |  | 
+247 | Trivial |  | তুচ্ছ | Frivolous, Insignificant, Paltry | Important, Serious, Weighty |  |  | 
+247 | Truce |  | সাময়িক যুদ্ধ বিরতি | Cease-fire, Armistice | War, Fighting |  |  | 
+247 | Truculent |  | বদ মেজাজি/ নিষ্ঠুর | Aggressive, Bad-tempered, Belligerent, Hostile | Co-operative, Good-natured, Affable, Friendly, Modest |  |  | 
+247 | Turbid |  | কর্দমাক্ত | Murky, Muddy | Limpid, Clear |  |  | 
+247 | Unanimous |  | সর্বসম্মত | Common, Concerted, Harmonious, Joint, United | Discordant, Divided, Disunited, Split |  |  | 
+247 | Unavoidable |  | অবশ্যম্ভাবী | Inevitable, Ineluctable | Doubtful |  |  | 
+247 | Undisturbed |  | শান্ত/ স্থির | Unruffled, Serene, Unperturbed | Upset, Ruffled |  |  | 
+247 | Universal |  | সার্বজনীন | General, Whole, Total, Comprehensive, Boundless, Exhaustive, Complete | Exclusive, Particular, Partial, Local, Limited, Incomplete |  |  | 
+247 | Unkempt |  | বিশৃঙ্খলা | Tousled, Disheveled, Bristly | Tidy, Orderly |  |  | 
+247 | Unwary |  | অসাবধান | Heedless, Rash | Circumspect, Discreet |  |  | 
+247 | Upgrade |  | উন্নত করা | Advance, Better, Elevate, Enhance, Improve, Promote, Raise | Degrade, Downgrade, Lessen, Lower, Deteriorate |  |  | 
+247 | Urbane |  | সভ্য/ নম্র | Accomplished, Courteous, Polite, Well-Mannered | Boorish, Impertinent, Rude, Uncivil |  |  | 
+248 | Vacillate |  | ইতস্তত/ দ্বিধা করা | Hesitate, Waver | Determine, Decide |  |  | 
+248 | Vague |  | অস্পষ্ট | Ambiguous, Hazy, Indistinct, Uncertain, Unsettled | Clear, Explicit, Lucid, Specific |  |  | 
+248 | Valiant |  | সাহসী | Courageous, Dauntless | Crave, Fearful |  | Antonym printed as "Crave". | Crave=Craven
+248 | Valid |  | বৈধ | Legitimate, Legal | Void, Null, Invalid |  |  | 
+248 | Valor |  | সাহস | Bravery, Fortitude | Cowardice |  |  | 
+248 | Vengeance |  | প্রতিহিংসা | Revenge | Pardon |  |  | 
+248 | Venomous |  | বিষাক্ত | Malicious, Malign, Noxious, Poisonous, Spiteful, Vicious | Affectionate, Harmless, Non-Poisonous, Fragrant |  |  | 
+248 | Veracious |  | সত্যবাদী | Truthful, Honest, Righteous, Upright | Mendacious |  |  | 
+248 | Verbose |  | শব্দবহুল | Prolix, Wordy | Laconic, Pithy |  |  | 
+248 | Versatile |  | বহুমুখী | Multitalented, Multipurpose | Limited, Restricted |  |  | 
+248 | Vigor |  | জীবনীশক্তি | Verve, Vim, Energy | Lethargy |  |  | 
+248 | Vigorous |  | বলবান/ উৎসাহী | Active, Energetic, Spirited, Sprightly, Vivacious | Dull, Insipid, Stale, Vapid |  |  | 
+248 | Virtuous |  | নৈতিক সদগুণসম্পন্ন | Morally Good, Moral | Wicked, Evil |  |  | 
+248 | Vivid |  | প্রাণবন্ত | Animated, Elastic, Sprightly | Vague, Dull |  |  | 
+248 | Volatile |  | উদ্বায়ী/চঞ্চল/পরিবর্তনশীল | Resilient, Tickle, Changeable, Light-hearted | Depressed, Despondent, Sullen |  | Synonym printed as "Tickle". | Tickle=Fickle
+248 | Vulgar |  | অমার্জিত/ অভদ্র | Impolite, Plebeian | Refined, Aristocrat |  |  | 
+248 | Wanton |  | দুশ্চরিত্র, অমিতব্যয়ী | Reckless, Profuse, Prodigal, Extravagant, Uneconomical | Discreet, Austere, Stationary, Controlled |  |  | 
+248 | Weary |  | ক্লান্তিকর | Fatigued, Exhausted, Debilitated | Fresh, Vigorous, Renovated, Hearty |  |  | 
+248 | Wilt |  | শুকিয়ে যাওয়া | Wither, Droop, Shrivel | Bloom |  | The book gives the same Bengali for Wilt and Wither. | 
+248 | Wither |  | শুকিয়ে যাওয়া | Wilt, Dry up | Flourish, Thrive |  |  | 
+248 | Witty |  | রসিক ও বুদ্ধিমান | Adroit, Funny, Talented, Ingenious | Awkward, Clumsy |  |  | 
+248 | Wordy |  | শব্দবহুল | Verbose, Prolix | Succinct, Terse |  |  | 
+248 | Wreck |  | ধ্বংস/ ভগ্নাবশেষ | Demolish, Destroy, Devastate | Establish, Preserve, Construct |  | Bengali read with low confidence. | 
+248 | Wrinkle |  | ভাঁজ পরা | Crease, Pucker | Smooth |  | Bengali read with low confidence. | 
+248 | Zany |  | নির্বোধ ব্যক্তি | Crazy, Loony, Dull, Eccentric | Grave, Serious, Wise, Sagacious |  |  | 
+248 | Zeal |  | আবেগপূর্ণ আগ্রহ | Devotion, Enthusiasm, Fervency, Fervor, Intensity, Ardor | Apathy, Indifference, Unconcern, Detachment |  |  | 
+248 | Zenith |  | সর্বোচ্চ স্থান | Acme, Apex, Climax, Culmination, Pinnacle | Anticlimax, Base Floor, Lowest Point, Nadir |  |  | 
+248 | Zigzag |  | আঁকাবাঁকা | Meandering, Sinuous | Straight, Level, Upright, Steep |  |  | 

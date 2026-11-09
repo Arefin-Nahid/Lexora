@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lexora</title>
+<meta name="description" content="Learn English synonyms and antonyms with spaced repetition. Works offline.">
+<meta name="theme-color" content="#EBF1EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Lexora">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<script>
+/* apply the saved theme before first paint, so there is no flash */
+try { var s = JSON.parse(localStorage.getItem('lexora:v1') || '{}'); var t = s.device && s.device.theme;
+  if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/app.css?v=__VERSION__">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+</head>
+<body>
+<header class="topbar"><div class="topbar-in" id="topbar"></div></header>
+<main id="view" aria-live="polite"></main>
+<nav class="tabs" aria-label="Main"><div class="tabs-in" id="tabs"></div></nav>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Study" hidden></div>
+<div class="toast" id="toast" role="status" hidden></div>
+<noscript><p style="padding:16px">Lexora needs JavaScript to run.</p></noscript>
+<script id="lexora-data" type="application/json">__DATA__</script>
+<script src="js/srs.js?v=__VERSION__"></script>
+<script src="js/quiz.js?v=__VERSION__"></script>
+<script src="js/store.js?v=__VERSION__"></script>
+<script src="js/session.js?v=__VERSION__"></script>
+<script src="js/sync.js?v=__VERSION__"></script>
+<script src="js/firebase-config.js?v=__VERSION__"></script>
+<script src="js/firebase-adapter.js?v=__VERSION__"></script>
+<script src="js/app.js?v=__VERSION__"></script>
+</body>
+</html>

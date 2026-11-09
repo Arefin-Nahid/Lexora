@@ -1,0 +1,18 @@
+{
+  "id": "./",
+  "name": "Lexora",
+  "short_name": "Lexora",
+  "description": "Learn English synonyms and antonyms with spaced repetition. Works offline.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "en",
+  "background_color": "#EBF1EC",
+  "theme_color": "#16765D",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
