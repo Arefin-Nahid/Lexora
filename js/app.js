@@ -26,7 +26,7 @@
     plan: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>',
     gear: '<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/>',
     back: '<path d="M15 5l-7 7 7 7"/>', close: '<path d="M6 6l12 12M18 6L6 18"/>',
-    star: '<path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/>',
+    speaker: '<path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/>',
     check: '<path d="M5 12.5l4.5 4.5L19 7.5"/>', redo: '<path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"/><path d="M21 3v5h-5"/>', minus: '<path d="M6 12h12"/>', list: '<path d="M9 6h11M9 12h11M9 18h11"/><path d="M4 6h.01M4 12h.01M4 18h.01"/>', chev: '<path d="M6 9l6 6 6-6"/>'
   };
   function ic(n) { return '<svg class="i" viewBox="0 0 24 24" aria-hidden="true">' + ICONS[n] + '</svg>'; }
@@ -68,14 +68,14 @@
 
   /* ---------- UI state ---------- */
   var ui = {
-    route: 'home', prev: 'home',
+    route: 'today', prev: 'today',
     pick: { cats: {}, count: 20 },
     prac: { cats: {}, scope: 'any', count: 20 },
     Q: { q: '', cat: '', pos: '', status: '', letter: '', limit: 40 },
     planAll: false, resetArmed: false, installEvt: null, busy: false
   };
   var PACES = [5, 10, 15, 20, 30, 40];
-  var TITLES = { home: 'Lexora', today: 'Today', practice: 'Practice', search: 'Search', settings: 'Settings' };
+  var TITLES = { today: 'Today', practice: 'Practice', search: 'Search', settings: 'Settings' };
 
   function go(r) {
     if (r === 'settings') { if (ui.route === 'settings') r = ui.prev; else ui.prev = ui.route; }
@@ -98,7 +98,7 @@
       + '<button class="iconbtn" data-act="settings" aria-label="Settings" aria-pressed="' + inSettings + '">' + ic('gear') + '</button>';
   }
   function renderTabs() {
-    var sm = summary(), tabs = [['home', 'Home'], ['today', 'Today'], ['practice', 'Practice'], ['search', 'Search']];
+    var sm = summary(), tabs = [['today', 'Today'], ['practice', 'Practice'], ['search', 'Search']];
     $('#tabs').innerHTML = tabs.map(function (t) {
       var cur = ui.route === t[0] ? ' aria-current="page"' : '';
       var badge = t[0] === 'today' && sm.remaining > 0 ? '<span class="badge">' + (sm.remaining > 99 ? '99+' : sm.remaining) + '</span>' : '';
@@ -107,63 +107,47 @@
   }
   function render() {
     renderBar();
-    var v = { home: vHome, today: vToday, practice: vPractice, search: vSearch, settings: vSettings }[ui.route];
+    var v = { today: vToday, practice: vPractice, search: vSearch, settings: vSettings }[ui.route];
     $('#view').innerHTML = v();
     renderTabs();
     if (ui.route === 'search') drawResults();
   }
 
-  /* ---------- Home ---------- */
-  function vHome() {
-    var sm = summary(), seen = store.seenCount(), weak = weakIds().length;
-    var hero;
-    if (sm.remaining > 0) {
-      hero = '<section class="card hero"><div class="label">Today\'s study</div><div class="big">' + sm.remaining + '<small>' + (sm.remaining === 1 ? 'word left' : 'words left') + '</small></div>'
-        + '<div class="meta">' + sm.remainingNew + ' new · ' + plural(sm.due, 'review') + '</div>'
-        + '<div class="track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + Math.round(sm.progress * 100) + '"><i style="width:' + Math.round(sm.progress * 100) + '%"></i></div>'
-        + '<button class="btn block" data-act="start">Start</button>'
-        + (sm.reduced ? '<div class="note">' + esc(sm.reason) + '</div>' : '') + '</section>';
-    } else {
-      hero = '<section class="card hero"><div class="label">Today\'s study</div><div class="big">Done<small>for today</small></div>'
-        + '<div class="meta">' + (sm.newDone + sm.reviewedToday) + ' words studied today. Come back tomorrow for your next reviews.</div>'
-        + '<div class="track"><i style="width:100%"></i></div><button class="btn block" data-act="tab" data-r="today">Read more words</button></section>';
-    }
-    var tiles = '<div class="tiles"><div class="tile"><b>' + seen + '</b><span>Words learned</span></div>'
-      + '<div class="tile"><b>' + store.streak() + '</b><span>Day streak</span></div>'
-      + '<button class="tile" data-act="weak"><b>' + weak + '</b><span>Difficult words</span></button></div>';
-    var bars = '<section class="card"><h2>Progress by letter</h2><p class="sub" style="margin-bottom:12px">' + seen + ' of ' + entries.length + ' words started</p><div class="cats">'
-      + cats.map(function (c) {
-        var done = entries.filter(function (e) { return e.cat === c && store.card(e.id) && store.card(e.id).first; }).length;
-        return '<div class="cat"><b>' + c + '</b><div class="meter" role="img" aria-label="' + c + ': ' + done + ' of ' + catTotal[c] + '"><i style="width:' + (done / catTotal[c] * 100) + '%"></i></div><span>' + done + '/' + catTotal[c] + '</span></div>';
-      }).join('') + '</div></section>';
-    return hero + tiles + bars;
-  }
-
   /* ---------- Today ---------- */
   function catPicker(sel, key) {
     var all = !Object.keys(sel).length;
-    return '<div class="catpick" role="group" aria-label="Categories"><button data-act="cat" data-k="' + key + '" data-c="" aria-pressed="' + all + '">All</button>'
+    return '<div class="catgrid" role="group" aria-label="Letters"><button class="all" data-act="cat" data-k="' + key + '" data-c="" aria-pressed="' + all + '">All letters</button>'
       + cats.map(function (c) { return '<button data-act="cat" data-k="' + key + '" data-c="' + c + '" aria-pressed="' + !!sel[c] + '">' + c + '</button>'; }).join('') + '</div>'
-      + '<p class="sub" style="margin-top:8px">' + (all ? 'All letters (swipe the row for more)' : 'Selected: ' + Object.keys(sel).sort().join(', ')) + '</p>';
+      + '<p class="sub" style="margin-top:8px">' + (all ? 'Words from every letter' : 'Selected: ' + Object.keys(sel).sort().join(', ')) + '</p>';
   }
   function countSeg(cur, key) {
     return '<div class="seg" role="group" aria-label="Number of words">' + [10, 20, 30, 50].map(function (n) { return '<button data-act="count" data-k="' + key + '" data-n="' + n + '" aria-pressed="' + (cur === n) + '">' + n + '</button>'; }).join('') + '</div>';
   }
   function vToday() {
-    var sm = summary();
-    var plan = '<section class="card stack"><div><div class="label">Daily plan</div>'
-      + '<div class="row between"><span>New words</span><b>' + sm.newDone + ' of ' + sm.quota + ' done</b></div>'
-      + '<div class="row between"><span>Reviews waiting</span><b>' + sm.due + '</b></div></div>'
-      + (sm.reduced ? '<div class="notice">' + esc(sm.reason) + '</div>' : '')
-      + '<div class="stack">'
-      + '<button class="btn block" data-act="start"' + (sm.remaining ? '' : ' disabled') + '>' + (sm.remaining ? 'Start today\'s study' : 'Nothing left for today') + '</button>'
-      + (sm.due > 0 && sm.remainingNew > 0 ? '<button class="btn ghost block" data-act="reviewsOnly">Reviews only</button>' : '') + '</div>'
-      + '<p class="sub">Step 1 is a numbered list of new words to read. Step 2 is a test where you answer Forgot, Hard or Got it.</p></section>';
+    var sm = summary(), seen = store.seenCount(), weak = weakIds().length, pct = Math.round(sm.progress * 100), hero;
+    if (sm.remaining > 0) {
+      hero = '<section class="card hero"><div class="hero-top"><div><div class="label">Today\'s study</div>'
+        + '<div class="big">' + sm.remaining + '<small>' + (sm.remaining === 1 ? 'word left' : 'words left') + '</small></div></div>'
+        + '<div class="pills"><span class="pill"><b>' + sm.remainingNew + '</b> new</span><span class="pill"><b>' + sm.due + '</b> ' + (sm.due === 1 ? 'review' : 'reviews') + '</span></div></div>'
+        + '<div class="track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + pct + '"><i style="width:' + pct + '%"></i></div>'
+        + '<div class="hero-sub"><span>' + pct + '% done today</span><span>' + sm.newDone + ' of ' + sm.quota + ' new words</span></div>'
+        + '<button class="btn block" data-act="start">Start today\'s study</button>'
+        + (sm.due > 0 && sm.remainingNew > 0 ? '<button class="btn-link" data-act="reviewsOnly">Reviews only</button>' : '')
+        + (sm.reduced ? '<div class="note">' + esc(sm.reason) + '</div>' : '')
+        + '<p class="hero-help">Read the new words first, then take a short test: Forgot, Hard or Got it.</p></section>';
+    } else {
+      hero = '<section class="card hero"><div class="label">Today\'s study</div><div class="big">Done<small>for today</small></div>'
+        + '<div class="track"><i style="width:100%"></i></div>'
+        + '<p class="hero-help" style="margin-top:0">' + (sm.newDone + sm.reviewedToday) + ' words studied today. Come back tomorrow for your next reviews, or pick more words below.</p></section>';
+    }
+    var tiles = '<div class="tiles"><div class="tile"><b>' + seen + '</b><span>Words learned</span></div>'
+      + '<div class="tile"><b>' + store.streak() + '</b><span>Day streak</span></div>'
+      + '<button class="tile" data-act="weak"><b>' + weak + '</b><span>Difficult words</span></button></div>';
     var more = '<section class="card stack"><div><h2>Pick more words</h2><p class="sub">Read extra words from any letters. This does not use up today\'s plan.</p></div>'
       + '<div><div class="label">Letters</div>' + catPicker(ui.pick.cats, 'pick') + '</div>'
       + '<div><div class="label">How many</div>' + countSeg(ui.pick.count, 'pick') + '</div>'
       + '<button class="btn soft block" data-act="pickRead">Read as a list</button></section>';
-    return plan + more;
+    return hero + tiles + more;
   }
 
   /* ---------- Practice ---------- */
@@ -212,7 +196,7 @@
     return '<div class="stack"><div class="searchbox">' + ic('search') + '<input id="q" type="search" placeholder="Search a word, a meaning or a Bengali word" value="' + esc(Q.q) + '" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Search"></div>'
       + '<div class="filters"><select id="fcat" aria-label="Letter"><option value="">All letters</option>' + cats.map(function (c) { return '<option' + (Q.cat === c ? ' selected' : '') + '>' + c + '</option>'; }).join('') + '</select>'
       + (hasPosFilter ? '<select id="fpos" aria-label="Part of speech"><option value="">Any type</option>' + posSet.map(function (p) { return '<option' + (Q.pos === p ? ' selected' : '') + '>' + esc(p) + '</option>'; }).join('') + '</select>' : '')
-      + '<select id="fstatus" aria-label="Status">' + [['', 'Any status'], ['new', 'New'], ['learning', 'Learning'], ['mastered', 'Mastered'], ['starred', 'Starred'], ['weak', 'Difficult']].map(function (s) { return '<option value="' + s[0] + '"' + (Q.status === s[0] ? ' selected' : '') + '>' + s[1] + '</option>'; }).join('') + '</select></div>'
+      + '<select id="fstatus" aria-label="Status">' + [['', 'Any status'], ['new', 'New'], ['learning', 'Learning'], ['mastered', 'Mastered'], ['weak', 'Difficult']].map(function (s) { return '<option value="' + s[0] + '"' + (Q.status === s[0] ? ' selected' : '') + '>' + s[1] + '</option>'; }).join('') + '</select></div>'
       + '<div class="letters" role="group" aria-label="Letter index" id="letters">' + cats.map(function (c) { return '<button data-act="letter" data-c="' + c + '" aria-pressed="' + (Q.letter === c) + '">' + c + '</button>'; }).join('') + '</div>'
       + '<div id="results" class="stack"></div></div>';
   }
@@ -221,7 +205,6 @@
     if (Q.cat && e.cat !== Q.cat) return false;
     if (Q.letter && e.cat !== Q.letter) return false;
     if (Q.pos && e.pos.indexOf(Q.pos) < 0) return false;
-    if (Q.status === 'starred') return !!(c && c.star);
     if (Q.status === 'weak') return srs.isWeak(c);
     if (Q.status) return statusOf(e.id) === Q.status;
     return true;
@@ -314,6 +297,19 @@
   function rowBody(e) {
     return '<div class="body"><div class="bnline">' + esc(e.bn) + '</div>' + chipsHtml(e.syn) + chipsHtml(e.ant, 'ant') + unclearHtml(e) + '</div>';
   }
+  /* Pronounce a word with the device's speech engine (works offline when the device has an English voice). */
+  function speak(word, btn) {
+    var ss = window.speechSynthesis;
+    if (!ss || typeof window.SpeechSynthesisUtterance !== 'function') { toast('Speech is not available on this device.'); return; }
+    try {
+      ss.cancel();
+      var u = new window.SpeechSynthesisUtterance(word); u.lang = 'en-US'; u.rate = 0.9;
+      document.querySelectorAll('.speak.on').forEach(function (b) { b.classList.remove('on'); });
+      if (btn) { btn.classList.add('on'); u.onend = u.onerror = function () { btn.classList.remove('on'); }; }
+      ss.speak(u);
+    } catch (e) { toast('Speech is not available on this device.'); }
+  }
+  function allRead() { return SES.ids.length > 0 && readCount() === SES.ids.length; }
   function readCount() { return SES.ids.filter(function (id) { return (store.card(id) || {}).read; }).length; }
   function readFoot() {
     var k = SES.ctx.kind;
@@ -327,10 +323,10 @@
       var e = byId.get(id), c = store.card(id) || {}, hidden = SES.cover && !SES.shown[id];
       return '<li class="rd' + (c.read ? ' is-read' : '') + '" data-id="' + id + '"><span class="no">' + (i + 1) + '</span><div><div class="w">' + esc(e.word) + '</div>'
         + (hidden ? '<button class="cover" data-act="reveal" data-id="' + id + '">Tap to show the meaning</button>' : rowBody(e)) + '</div>'
-        + '<div class="acts"><button class="iconbtn star" data-act="star" data-id="' + id + '" aria-pressed="' + !!c.star + '" aria-label="Star ' + esc(e.word) + '">' + ic('star') + '</button>'
+        + '<div class="acts"><button class="iconbtn speak" data-act="speak" data-id="' + id + '" aria-label="Listen to ' + esc(e.word) + '">' + ic('speaker') + '</button>'
         + '<button class="iconbtn tick" data-act="tick" data-id="' + id + '" aria-pressed="' + !!c.read + '" aria-label="Mark ' + esc(e.word) + ' as read">' + ic('check') + '</button></div></li>';
     }).join('');
-    var body = '<div class="toolbar"><button class="switch" role="switch" data-act="cover" aria-checked="' + SES.cover + '"><span class="tr"></span><span>Cover answers</span></button><button class="btn small ghost" data-act="markAll">Mark all read</button></div><ol class="words">' + items + '</ol>';
+    var body = '<div class="toolbar"><button class="switch" role="switch" data-act="cover" aria-checked="' + SES.cover + '"><span class="tr"></span><span>Cover answers</span></button><button class="btn small ghost" data-act="markAll">' + (allRead() ? 'Unmark all' : 'Mark all read') + '</button></div><ol class="words">' + items + '</ol>';
     var keep = $('#sbody') ? $('#sbody').scrollTop : 0;
     sheet(frame(SES.ctx.title, readCount() + '/' + SES.ids.length + ' read', SES.ids.length ? readCount() / SES.ids.length * 100 : 0, body, readFoot()));
     $('#sbody').scrollTop = keep;
@@ -473,18 +469,14 @@
       case 'letter': ui.Q.letter = ui.Q.letter === d.c ? '' : d.c; ui.Q.limit = 40;
         document.querySelectorAll('#letters button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.c === ui.Q.letter)); }); drawResults(); break;
       case 'moreResults': ui.Q.limit += 40; drawResults(); break;
-      case 'star': {
-        var c = store.toggleStar(id);
-        document.querySelectorAll('[data-act="star"][data-id="' + id + '"]').forEach(function (b) { b.setAttribute('aria-pressed', String(!!c.star)); });
-        break;
-      }
+      case 'speak': speak(byId.get(+id).word, a); break;
       case 'tick': {
         var on = a.getAttribute('aria-pressed') !== 'true'; store.setRead(id, on);
         a.setAttribute('aria-pressed', String(on));
         var li = a.closest('li'); if (li) li.classList.toggle('is-read', on);
         if (SES && SES.type === 'read') updateReadHeader(); break;
       }
-      case 'markAll': SES.ids.forEach(function (i) { if (!(store.card(i) || {}).read) store.setRead(i, true); }); drawRead(); break;
+      case 'markAll': { var on = !allRead(); SES.ids.forEach(function (i) { if (!!(store.card(i) || {}).read !== on) store.setRead(i, on); }); drawRead(); break; }
       case 'cover': SES.cover = !SES.cover; SES.shown = {}; store.setDevice('cover', SES.cover); drawRead(); break;
       case 'reveal': {
         SES.shown[id] = true; var li2 = a.closest('li'), cell = a.parentNode;

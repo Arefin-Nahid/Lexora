@@ -4,10 +4,10 @@
    - Fonts and the Firebase SDK files: stale-while-revalidate too
    - Firebase data and sign-in traffic is never touched here
    All paths are relative to this file, so it works from a GitHub Pages sub-path such as /Lexora/. */
-const VERSION = 'lexora-6d88d6df';
+const VERSION = 'lexora-4b0869a0';
 const SHELL_CACHE = VERSION + '-shell';
 const RUNTIME_CACHE = 'lexora-runtime-v1';
-const SHELL = /*SHELL_START*/["./", "index.html", "manifest.webmanifest", "css/app.css?v=6d88d6df", "js/srs.js?v=6d88d6df", "js/quiz.js?v=6d88d6df", "js/store.js?v=6d88d6df", "js/session.js?v=6d88d6df", "js/sync.js?v=6d88d6df", "js/firebase-config.js?v=6d88d6df", "js/firebase-adapter.js?v=6d88d6df", "js/app.js?v=6d88d6df", "icons/icon-192.png", "icons/icon-512.png", "icons/maskable-512.png", "icons/apple-touch-icon.png"]/*SHELL_END*/;
+const SHELL = /*SHELL_START*/["./", "index.html", "manifest.webmanifest", "css/app.css?v=4b0869a0", "js/srs.js?v=4b0869a0", "js/quiz.js?v=4b0869a0", "js/store.js?v=4b0869a0", "js/session.js?v=4b0869a0", "js/sync.js?v=4b0869a0", "js/firebase-config.js?v=4b0869a0", "js/firebase-adapter.js?v=4b0869a0", "js/app.js?v=4b0869a0", "icons/icon-192.png", "icons/icon-512.png", "icons/maskable-512.png", "icons/apple-touch-icon.png"]/*SHELL_END*/;
 const CACHEABLE_HOSTS = ['fonts.googleapis.com', 'fonts.gstatic.com', 'www.gstatic.com'];
 const scopeUrl = (p) => new URL(p, self.registration.scope).href;
 
